@@ -187,16 +187,16 @@
           <div class="detail-menu-frame">
             <div class="detail-menu-group">
               <div class="detail-menu">
-                <div class="descriptions">Descriptions</div>
-                <div class="detail-menu-text">Additional Information</div>
-                <div class="detail-menu-text">Reviews</div>
+                <button class="descriptions detail-menu-text active" onclick="openTab(event, 'descriptions-content')">Descriptions</button>
+                <button class="detail-menu-text" onclick="openTab(event, 'information-content')">Additional Information</button>
+                <button class="detail-menu-text" onclick="openTab(event, 'reviews-content')">Reviews</button>
               </div>
               <div class="detail-menu-underline">
                 <div class="detail-menu-underline-blue"></div>
               </div>
             </div>
             <!-- taaaaaaaaaaaaaaab -->
-            <div id="detail-menu-content">
+            <div id="descriptions-content" class="tab-content">
               <p class="text">
                 t is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.
@@ -214,8 +214,12 @@
                 accident, sometimes on purpose (injected humour and the like).
               </p>
             </div>
-          </div>
+            <div id="information-content" class="tab-content">dafsaf</div>
+            <div id="reviews-content" class="tab-content">defrgtyuiluk</div>
 
+            <script src="product-detail.js"></script>
+
+          </div>
         </div>
         <div class="related-products-frame">
           <b class="related-products-text">Related Products</b>
