@@ -871,6 +871,204 @@
 #information-content table td{
   font-size: var(--body-1-regular-size);
 }
+/* tab3 */
+.customer-reviews-title {
+  flex: 1;
+  position: relative;
+  font-size: var(--header-6-bold-size);
+  line-height: 30px;
+  display: inline-block;
+  color: var(--dark-500);
+  text-align: left;
+  max-width: 100%;
+  margin-bottom: 20pX;
+}
+.customer-reviews-text {
+  position: relative;
+  font-size: var(--body-1-regular-size);
+  line-height: 30px;
+  color: var(--dark-500);
+  text-align: left;
+  display: inline-block;
+  min-width: 114px;
+}
+p.customer-reviews-text {
+  margin: 0;
+}
+.name-rating-group {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: var(--gap-7xs);
+}
+.customer-review-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-self: stretch;
+  align-items: center;
+  gap: var(--gap-3xs);
+  margin-bottom: 10px;
+}
+.review-by-posted-on {
+  color: var(--gray-500);
+}
+.review-by-posted-on-content {
+  color: var(--dark-500);
+}
+.review-by-posted-on-container {
+  position: relative;
+  font-size: var(--body-2-regular-size);
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.review-separator-line {
+  align-self: stretch;
+  height: 1px;
+  position: relative;
+  background-color: var(--gray-gray-20);
+  margin-bottom: 10px;
+}
+.profile-photo {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.all-reviews-container{
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  padding: 0 0 var(--padding-xl);
+  box-sizing: border-box;
+  gap: var(--gap-11xs);
+  max-width: 100%;
+}
+.add-your-review{
+  align-self: stretch;
+  position: relative;
+  font-size: var(--header-6-regular-size);
+  line-height: 30px;
+  font-family: var(--header-4-regular);
+  color: var(--dark-500);
+  text-align: left;
+}
+.star-separator-line {
+  height: 20px;
+  width: 1px;
+  position: relative;
+  background-color: var(--gray-gray-20);
+}
+.your-rating-group {
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.your-rating-container,
+.timekeeper {
+  height: 20px;
+  flex-direction: row;
+  gap: var(--gap-3xs);
+}
+.your-rating-frame,
+.your-rating-container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.your-rating-frame {
+  align-self: stretch;
+  flex-direction: column;
+  padding: 0 0 var(--padding-3xs);
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+}
+label{
+  align-self: stretch;
+  font-size: var(--caption-regular-size);
+  line-height: 20px;
+  color: var(--dark-500);
+  font-family: var(--body-1-regular);
+  position: relative;
+  text-align: left;
+}
+label input{
+  font-size: var(--body-1-regular-size);
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  height: 30px;
+  flex: 1;
+  line-height: 30px;
+  display: inline-block;
+  min-width: 250px;
+  max-width: 100%;
+  padding: 0;
+  border-radius: var(--br-3xs);
+  border: 1px solid var(--gray-gray-20);
+  flex-direction: row;
+  padding: var(--padding-smi) var(--padding-mini);
+  font-family: var(--body-1-regular);
+}
+#review {
+  padding-bottom: 80px;
+}
+::placeholder{
+  color: var(--gray-gray-80);
+}
+.add-your-review-container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+  gap: var(--gap-8xs);
+}
+.submit-butt {
+  /* position: relative;
+  line-height: 30px; */
+  border-radius: var(--br-3xs);
+  background-color: var(--primary-500);
+  border: var(--primary-500);
+  width: 139px;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-xl);
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+  font-family: var(--body-1-regular);
+  font-size: var(--body-1-regular-size);
+  color: var(--white-500);
+}
+.submit-butt:hover{
+  background-color: var(--color-steelblue);
+}
+.frame-form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0;
+  align-self: stretch;
+  flex-direction: column;
+  padding: 0 0 var(--padding-31xl);
+  box-sizing: border-box;
+  gap: var(--gap-11xl);
+  max-width: 100%;
+}
 
 
 
