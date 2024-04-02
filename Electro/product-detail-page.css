@@ -859,6 +859,19 @@
 .tab-content {
   display: none;
 }
+/* tab2 */
+#information-content table{
+  font-family: var(--body-1-regular);
+  line-height: 30px;
+}
+#information-content table th{
+  font-size: var(--header-7-bold-size);
+  padding-right: var(--padding-11xl);
+}
+#information-content table td{
+  font-size: var(--body-1-regular-size);
+}
+
 
 
 
