@@ -71,43 +71,12 @@
             </div>
         </div>
         </div>
-        <button class="log-butt-position log-butt-shape">Login</button>
+        <a href="#log-page">
+          <button class="log-butt-position log-butt-shape">Login</button>
+        </a>
     </div>
 </header>
   <div class="main-section">
-      <!-- <div class="top-header">
-        <img class="logo" src="images/logo.svg" alt="logo">
-        <div class="search-bar">
-            <input class="search-inp" type="text" name="" value="" placeholder="search">
-            <button class="search-butt">Search</button>
-        </div>
-        <div class="header-el">
-            <button class="log-butt">Login</button>
-            <div class="container">
-                <img src="images/search.svg" alt="sdfr">
-                <img src="images/favorites.svg" alt="">
-                <img src="images/card.svg" alt="" id="card">
-            </div>
-        </div>
-    </div> -->
-    <!-- <div class="bottom-header">
-        <div class="filter-menu">
-            <img class="hamburger-menu" src="images/hamburger-menu.svg" alt="">
-            <div class="categories">All Categories</div>
-            <img class="filter-icon" src="images/search-bar-filter.svg" alt="">
-        </div>
-        <nav class="main-menu">
-            <ul>
-                <li>Home</li>
-                <li class="shop">Shop
-                    <img src="images/Vector 175.svg" alt="">
-                </li>
-                <li>About Us</li>
-                <li>Blog</li>
-                <li>Contact Us</li>
-            </ul>
-        </nav>   
-    </div> -->
     <div>
       <div class="happy-man-bg"></div>
       <img class="happy-man" src="images/happy-man.png" alt="">
@@ -547,24 +516,59 @@
     </div>
   </section>
 
+  <div id="log-page" class="modal-container">
+    
+      <form class="log-form">
 
+        <div class="login-page-header">
+          <div>
+            <h2 class="welcome-text">Welcome 👋</h2>
+            <div class="login-here-text">Please login here</div>
+          </div>
+          <a href="#" class="modal-close">
+            <img src="images/remove.svg" alt="">
+          </a>
+        </div>
 
-<!-- 
-    <div class="button4">
-        <div class="div">Shop Now</div>
-        <img
-          class="huge-iconcommunicationoutlin"
-          alt=""
-          src="images/shop-now.svg"
-        />
-    </div>
-
-
-      <div>
-        <div>Shop by Categories</div>
-        <button class="right "></button>
-      </div> -->
-
+        <label for="email-label" name="email-label"class="login-inp-label">Email Address
+          <input id="email-label" class="login-inp"
+            placeholder="kristin.watson@example.com"
+            type="text"
+          />
+        </label>
+        <label for="password-label" name="password-label" class="login-inp-label">Password
+          <input id="password-label" class="login-inp"
+            placeholder="1238#@*"
+            type="password"
+          />
+        </label>
+        <div class="checkbox-forget-container">
+          <div class="checkbox-container">
+            <input id="checkbox-label" class="state" checked type="checkbox" />
+            <label for="checkbox-label" class="checkbox-label">Remember Me</label>
+          </div>
+          <a class="forget-pass" href="">Forget Password?</a>
+        </div>
+        <button id="log-butt-log-page" class="log-butt-position log-butt-shape">Login</button>
+        <button id="reg-butt-log-page" class="log-butt-position log-butt-shape">Register</button>
+        <div class="log-page-separator-line-container">
+          <div class="log-page-separator-line-pos">
+            <div class="log-page-separator-line"></div>
+          </div>
+          <div class="forget-pass">Or Login With</div>
+          <div class="log-page-separator-line-pos">
+            <div class="log-page-separator-line"></div>
+          </div>
+        </div>
+        <button id="log-with-butt" class="log-butt-position log-butt-shape">
+          <img alt="" src="images/google.svg" />Login with Google</button>
+        <button id="log-with-butt" class="log-butt-position log-butt-shape">
+          <img alt="" src="images/apple.svg" />Login with Apple</button>
+      </form>
+      <header class="modal-header">
+        <!-- <a href="#" class="modal-close">&times;</a> -->
+      </header>
+  </div>
 
     <div class="footer">
         <div class="footer-child"></div>

@@ -1,7 +1,5 @@
 
 
-
-
 * {
   box-sizing: border-box;
   font-family: var(--body-1-regular);
@@ -326,6 +324,9 @@ header nav{
 .top-right-header {
   gap: var(--gap-11xl);
 }
+.top-right-header a{
+  text-decoration: none;
+}
 .header {
   position: relative;
   align-self: stretch;
@@ -364,6 +365,209 @@ header nav{
   gap: 32px 64px;
 }
 }
+
+
+/* for background */
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease;
+}
+.modal-container:target {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-close{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: var(--primary-primary-10);
+  border-radius: 20%;
+}
+
+
+/* لاگین */
+.login-page-header{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+.welcome-text,
+.login-here-text {
+  align-self: stretch;
+  position: relative;
+  font-family: var(--body-1-regular);
+  text-align: left;
+}
+.welcome-text {
+  margin: 0;
+  font-size: var(--header-4-bold-size);
+  line-height: 42px;
+  font-weight: 700;
+  color: var(--dark-500);
+}
+.login-here-text {
+  font-size: var(--body-1-regular-size);
+  line-height: 30px;
+  color: var(--gray-500);
+}
+.login-inp-label {
+  font-family: var(--body-1-regular);
+  position: relative;
+  color: var(--dark-500);
+  text-align: left;
+  align-self: stretch;
+  font-size: var(--caption-regular-size);
+  line-height: 20px;
+}
+.login-inp {
+  outline: 0;
+  font-size: var(--body-1-regular-size);
+  background-color: transparent;
+  line-height: 30px;
+  display: inline-block;
+  white-space: nowrap;
+  box-sizing: border-box;
+  width: 100%;
+  height: 56px;
+  border-radius: var(--br-3xs);
+  border: 1px solid var(--primary-500);
+  flex-direction: row;
+  padding: var(--padding-smi) var(--padding-mini);
+}
+.state {
+  accent-color: var(--primary-500);
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.checkbox-label {
+  line-height: 30px;
+}
+.checkbox-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-base) 0 0;
+  gap: var(--gap-3xs);
+}
+.forget-pass{
+  text-decoration: none;
+  font-size: var(--body-2-regular-size);
+  color: black
+}
+.checkbox-forget-container {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--gap-11xl);
+  margin-bottom: 10px;
+}
+#log-butt-log-page{
+  width: 380px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#reg-butt-log-page{
+  width: 380px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: var(--primary-500);
+  border: 1px solid var(--primary-500);
+}
+#reg-butt-log-page:hover{
+  background-color: var(--primary-primary-10);
+  transition: 0.3s;
+}
+#log-with-butt{
+  width: 380px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: black;
+  border: 1px solid var(--gray-gray-20);
+}
+#log-with-butt:hover{
+  background-color: var(--primary-primary-10);
+  transition: 0.3s;
+}
+.log-page-separator-line-pos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xs-5) 0 0;
+  box-sizing: border-box;
+  min-width: 86px;
+}
+.log-page-separator-line {
+  align-self: stretch;
+  height: 1px;
+  position: relative;
+  background-color: var(--gray-gray-20);
+}
+.log-page-separator-line-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--gap-5xs);
+}
+.log-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  align-self: stretch;
+  border-radius: var(--br-base);
+  background-color: var(--white-500);
+  box-shadow: var(--ds-2);
+  border: 1px solid var(--gray-gray-20);
+  align-items: flex-start;
+  padding: var(--padding-xl) var(--padding-lgi);
+  gap: var(--gap-base);
+  max-width: 100%;
+  z-index: 2;
+  margin: auto;
+  width: 420px;
+  background-color: white;
+}
+
+
+
 
 
 
