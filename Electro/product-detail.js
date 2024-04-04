@@ -38,3 +38,13 @@ function closeAssideNav() {
   document.body.style.backgroundColor = "white"
   
 }
+
+function openReg(){
+  // document.getElementsByClassName("modal-container").style.display = "none";
+  // document.getElementsByClassName("modal-container").style.pointer-events = "none";
+  // document.getElementsByClassName("modal-container2").style.display = "flex";
+}
+
+function openLog(){
+  document.getElementsByClassName("modal-container").style.display = "flex";
+}

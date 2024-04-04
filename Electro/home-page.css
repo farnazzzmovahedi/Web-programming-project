@@ -387,6 +387,59 @@ header nav{
   pointer-events: all;
 }
 
+.modal-container2 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease;
+}
+.modal-container2:target {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-container3 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  opacity: 0; /* injaaaaaaaa*/
+  pointer-events: none;
+  transition: opacity 300ms ease;
+}
+.modal-container3:target {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-container4 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  opacity: 0; /* injaaaaaaaa*/
+  pointer-events: none;
+  transition: opacity 300ms ease;
+}
+.modal-container4:target {
+  opacity: 1;
+  pointer-events: all;
+}
 .modal-close{
   display: flex;
   align-items: center;
@@ -395,6 +448,13 @@ header nav{
   height: 24px;
   background-color: var(--primary-primary-10);
   border-radius: 20%;
+}
+
+.kossher .modal-container{
+  display: none;
+}
+.kossher .modal-container:target{
+  display: block;
 }
 
 
@@ -492,6 +552,7 @@ header nav{
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 #reg-butt-log-page{
   width: 380px;
@@ -502,6 +563,7 @@ header nav{
   background-color: transparent;
   color: var(--primary-500);
   border: 1px solid var(--primary-500);
+  text-decoration: none;
 }
 #reg-butt-log-page:hover{
   background-color: var(--primary-primary-10);
@@ -566,7 +628,74 @@ header nav{
   background-color: white;
 }
 
+.otp-form{
+  height: 309px;
+}
+.enter-pass{
+  width: 60px;
+  height: 60px;
+  border-color: var(--gray-gray-20);
+}
+.pass-inps{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 
+.succes-pass-form{
+  width: 392px;
+  height: 396px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+#back-login-butt{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.succes-pass-form h2,
+.succes-pass-form .login-here-text{
+  text-align: center;
+  color: black;
+}
+.succes-pass-form h2{
+  font-size: var(--header-5-bold-size);
+}
+.inner-circle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background-color: var(--primary-500);
+  border-radius: 50%;
+}
+.middle-circle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 86px;
+  height: 86px;
+  background-color: rgb(193, 210, 239);
+  border-radius: 50%;
+}
+.outer-circle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 108px;
+  height: 108px;
+  background-color: var(--primary-primary-10);
+  border-radius: 50%;
+}
+.outer-circle img{
+  width: 24px;
+  height: 24px;
+}
 
 
 
