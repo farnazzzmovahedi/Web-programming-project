@@ -161,7 +161,7 @@
                         <img src="images/product detail page/description/plus.svg" alt="">
                       </button>
                     </div>
-                    <button class="Add-to-Cart-position Add-to-Cart-text">Add to Cart</button>
+                    <button class="Add-to-Cart-position Add-to-Cart-text" onclick="openAssideNav()">Add to Cart</button>
                     <button class="add-to-favorite">
                       <img src="images/favorites.svg" alt="">
                     </button>
@@ -439,6 +439,40 @@
         </div>
       </section>
     </main>
+    <aside>
+      <div id="add-to-cart" class="add-to-cart">
+        <div>
+          <span>You have <b>2 items</b> in your cart</span>
+          <div class="cart-item-group" id="first-item">
+            <div class="cart-item-img-bg">
+              <img loading="lazy" alt="" src="images/mini cart/Apple iPhone 14 Pro.svg"/>
+            </div>
+            <div class="cart-item-text">Apple iPhone 14 Pro <br> <b>$1999.00</b> <br>QTY: 1</div>
+            <img class="trash-button" src="images/mini cart/trash.svg" alt="">
+            <div class="cart-item-separator-line"></div>
+          </div>
+          <div class="cart-item-group">
+            <div class="cart-item-img-bg">
+              <img loading="lazy" alt="" src="images/mini cart/Asus ROG Delta S.svg"/>
+            </div>
+            <div class="cart-item-text">Asus ROG Delta S <br> <b>$250.00</b> <br>QTY: 1</div>
+            <img class="trash-button" src="images/mini cart/trash.svg" alt="">
+            <div class="cart-item-separator-line"></div>
+          </div>
+        </div>
+
+        <div class="buttom-section">
+          <div class="sub-price">
+            <b>Subtotal</b>
+            <b>$2249.00</b>
+          </div>
+
+          <button class="cart-butts" id="view-cart-butt">View Cart</button>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeAssideNav()"><button class="cart-butts">Chekout</button></a>
+        </div>
+      </div>
+    </aside>
+
     <footer class="footer">
       <div class="blue-bg"></div>
       <div class="top-footer">

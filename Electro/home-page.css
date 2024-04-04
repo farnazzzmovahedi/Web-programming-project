@@ -200,6 +200,7 @@ body{
   gap: var(--gap-3xs);
   font-size: var(--body-1-regular-size);
   color: var(--white-500);
+  cursor: pointer;
 }
 .shop-now-butt:hover{
   background-color: var(--color-steelblue);
@@ -422,6 +423,8 @@ body{
   width: 555px;
   position: relative;
   height: 261px;
+  text-decoration: none;
+  color: black;
 }
 .ads {
   position: absolute;

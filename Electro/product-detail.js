@@ -22,3 +22,19 @@ function openTab(evt, tabName) {
     // evt.currentTarget.className += " active";
   }
   document.body.addEventListener('DOMContentLoaded', openTab(event, 'descriptions-content'));
+
+    /* Set the width of the side navigation to 250px */
+function openAssideNav() {
+  document.getElementById("add-to-cart").style.width = "352px";
+  // document.body.style.opacity = "0.7";
+  // document.getElementById("add-to-cart").style.opacity = "1";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.5)"
+}
+
+/* Set the width of the side navigation to 0 */
+function closeAssideNav() {
+  document.getElementById("add-to-cart").style.width = "0";
+  document.body.style.opacity = "1";
+  document.body.style.backgroundColor = "white"
+  
+}
