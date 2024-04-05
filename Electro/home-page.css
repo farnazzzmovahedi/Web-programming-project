@@ -4,7 +4,13 @@
   box-sizing: border-box;
   font-family: var(--body-1-regular);
 }
-
+.main-section{
+  width: 1519px;
+  height: 974px;
+  background-image: url(mask-group.svg);
+  background-color: var(--gray-gray-10);
+  background-size: cover;
+}
 .logo-container {
   height: 42px;
   width: 178.5px;
@@ -393,7 +399,7 @@ header nav{
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 2000;
+  z-index: 1000;
   background-color: rgba(0,0,0,0.5);
   display: flex;
   opacity: 0;
@@ -450,12 +456,6 @@ header nav{
   border-radius: 20%;
 }
 
-.kossher .modal-container{
-  display: none;
-}
-.kossher .modal-container:target{
-  display: block;
-}
 
 
 /* لاگین */
@@ -544,7 +544,7 @@ header nav{
   flex-direction: row;
   flex-wrap: wrap;
   gap: var(--gap-11xl);
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 #log-butt-log-page{
   width: 380px;
@@ -643,6 +643,7 @@ header nav{
   justify-content: space-around;
 }
 
+
 .succes-pass-form{
   width: 392px;
   height: 396px;
@@ -708,7 +709,7 @@ header nav{
 .happy-man-bg {
   position: absolute;
   top: 233px;
-  left: 703px;
+  left: 755px;
   border-radius: 50%;
   background-color: var(--white-500);
   width: 658px;
@@ -717,7 +718,7 @@ header nav{
 .happy-man{
   position: absolute;
   top: 160px;
-  left: 743px;
+  left: 793px;
   width: 599px;
   height: 814px;
   object-fit: cover;
@@ -733,9 +734,11 @@ header nav{
   line-height: 110px;
 }
 .main-content {
+  width: 514px;
   align-self: stretch;
   font-size: var(--header-7-bold-size);
   line-height: 30px;
+  margin-top: 0;
 }
 .content {
   align-self: stretch;
@@ -765,6 +768,7 @@ header nav{
 }
 .shop-now-butt:hover{
   background-color: var(--color-steelblue);
+  transition: 0.3s;
 }
 .huge-iconarrowssolidarrow-r2 {
   width: 24px;
@@ -777,8 +781,9 @@ header nav{
   /* background-color: aquamarine; */
   position: absolute;
   top: 300px;
-  left: 150px;
-  width: 514px;
+  /* left: 150px; */
+  left: 12%;
+  width: 530px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -786,9 +791,6 @@ header nav{
   gap: 38px;
   font-size: var(--header-1-bold-size);
   
-}
-.zhigool{
-  margin-left: 400px;
 }
 
 
@@ -815,16 +817,22 @@ header nav{
   display: flex;
   align-items: center;
   justify-content: center;
+  border-style: none;
+  cursor: pointer;
 }
 .left-butt{
-  border-style: none;
-  /* background-color: rgb(238, 238, 238); */
-  background-color: aquamarine;
-  margin-left: 80px;
+  background-color: var(--gray-gray-10);
+}
+.left-butt:hover{
+  background-color: var(--gray-gray-20);
+  transition: 0.3s;
 }
 .right-butt{
-  border-style: none;
   background-color: var(--primary-500);
+}
+.right-butt:hover{
+  background-color: var(--color-steelblue);
+  transition: 0.3s;
 }
 .action,
 .shop-by-catrgories-header {
@@ -885,7 +893,8 @@ header nav{
 .shop-by-categories {
   position: absolute;
   top: 1074px;
-  left: 150px;
+  /* left: 150px; */
+  left: 12%;
   flex-direction: column;
   gap: var(--gap-31xl);
 }
@@ -990,19 +999,18 @@ header nav{
 .ads {
   position: absolute;
   top: 1489px;
-  left: 150px;
+  /* left: 150px; */
+  left: 12%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* justify-content: center; */
   gap: var(--gap-11xl);
-  /* background-color: rebeccapurple; */
 }
 /* end of advertising */
 
 /* our bestseller products */
 .bestseller-products-topic {
-  width: 831px;
+  width: 790px;
   position: relative;
   line-height: 42px;
   display: inline-block;
@@ -1012,9 +1020,11 @@ header nav{
 .bestseller-filter ul li{
   list-style: none;
   display: inline;
-  margin: 0 10px;
+  margin-left: 10px;
   font-size: var(--header-6-bold-size);
-  
+}
+.bestseller-filter nav{
+  margin-right: 50px;
 }
 .bestseller-header {
   display: flex;
@@ -1141,11 +1151,10 @@ header nav{
 .bestseller-products {
   position: absolute;
   top: 1850px;
-  left: 150px;
+  /* left: 150px; */
+  left: 12%;
   flex-direction: column;
   gap: var(--gap-31xl);
-  /* iiiiiiiiiiiiiiiiiiiiiinnnnnnnnn */
-  align-items: center;
 }
 /* end of bestseller */
 
@@ -1210,11 +1219,9 @@ header nav{
   flex-direction: row;
   position: absolute;
   top: 3356px;
-  left: 150px;
+  left: 12%;
   flex-direction: column;
   gap: var(--gap-31xl);
-  /* iiiiiiiiiiiiiiiiiiiiiinnnnnnnnn */
-  align-items: center;
 }
 /* end of top selling products */
 
@@ -1250,8 +1257,9 @@ header nav{
 .our-features {
   position: absolute;
   top: 4262px;
-  left: 150px;
-  width: 1200px; /*1140*/
+  /* left: 150px; */
+  left: 12%;
+  width: 1140px; 
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -1261,8 +1269,10 @@ header nav{
 /* end of our features */
 
 
+
 /* footer */
-.footer-child {
+
+.blue-bg {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -1279,7 +1289,7 @@ header nav{
     top: 7.75%;
     right: 75.5%;
     bottom: 81.91%;
-    left: 10.42%;
+    left: 12%;
     max-width: 100%;
     overflow: hidden;
     max-height: 100%;
@@ -1298,7 +1308,8 @@ header nav{
   .call-group {
     position: absolute;
     top: 100px;
-    left: 150px;
+    /* left: 150px; */
+    left: 12%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1315,7 +1326,8 @@ header nav{
   .mail-group {
     position: absolute;
     top: 146px;
-    left: 150px;
+    /* left: 150px; */
+    left: 12%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1337,7 +1349,8 @@ header nav{
   .address-group {
     position: absolute;
     top: 192px;
-    left: 150px;
+    /* left: 150px; */
+    left: 12%;
     flex-direction: row;
   }
   .information-section,
@@ -1390,21 +1403,26 @@ header nav{
     background-color: var(--gray-gray-10);
     overflow: hidden;
     padding: var(--padding-smi) var(--padding-base);
+    cursor: pointer;
+  }
+  .mail-section:hover{
+    background-color: var(--color-steelblue);
+    transition: 0.3s;
   }
   .subscribe-section {
     position: absolute;
     top: 30px;
-    left: 968px;
+    left: 978px;
     gap: var(--gap-3xs);
   }
   .footer-line {
     position: absolute;
     height: 0.26%;
-    width: 79.17%;
+    width: 1140px;
     top: 83.72%;
     right: 10.42%;
     bottom: 16.02%;
-    left: 10.42%;
+    left: 12%;
     background-color: var(--gray-gray-20);
   }
 .payment-sponsor-group {
@@ -1414,7 +1432,7 @@ header nav{
     top: 88.11%;
     right: 74.31%;
     bottom: 5.68%;
-    left: 10.42%;
+    left: 12%;
   }
 .socialmedia-group {
     position: absolute;
@@ -1423,7 +1441,7 @@ header nav{
     top: 88.11%;
     right: 10.42%;
     bottom: 5.68%;
-    left: 81.81%;
+    left: 79%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -1439,3 +1457,8 @@ header nav{
     font-size: var(--body-1-regular-size);
     color: var(--white-500);
   }
+
+
+
+
+  
