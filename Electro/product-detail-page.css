@@ -2,6 +2,14 @@
   box-sizing: border-box;
   font-family: var(--body-1-regular);
 }
+#gray-bg{
+  position: fixed;
+  width: 100%;
+  height: 800px;
+  background-color: unset;
+  z-index: 500;
+  pointer-events: none;
+}
 
 .logo-container {
   height: 42px;
@@ -810,7 +818,7 @@ header nav{
   justify-content: flex-start;
   gap: var(--gap-11xl);
   width: 100%;
-  border-bottom: 2.5px solid var(--gray-gray-20);
+  border-bottom: 1px solid var(--gray-gray-20);
 }
 .detail-menu-group {
   align-self: stretch;
@@ -1013,14 +1021,15 @@ label{
   font-family: var(--body-1-regular);
   position: relative;
   text-align: left;
+  margin-top: 20px;
 }
 label input{
   font-size: var(--body-1-regular-size);
   width: 100%;
+  height: 56px;
   border: 0;
   outline: 0;
   background-color: transparent;
-  height: 30px;
   flex: 1;
   line-height: 30px;
   display: inline-block;
@@ -1035,6 +1044,7 @@ label input{
 }
 #review {
   padding-bottom: 80px;
+  padding-top: 20px;
 }
 ::placeholder{
   color: var(--gray-gray-80);
@@ -1049,8 +1059,7 @@ label input{
   gap: var(--gap-8xs);
 }
 .submit-butt {
-  /* position: relative;
-  line-height: 30px; */
+  cursor: pointer;
   border-radius: var(--br-3xs);
   background-color: var(--primary-500);
   border: var(--primary-500);
@@ -1181,7 +1190,7 @@ label input{
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  z-index: 3; /* Stay on top */
+  z-index: 1000; /* Stay on top */
   top: 0; /* Stay at the top */
   right: 0;
   background-color: rgb(242, 242, 242); /* Black*/
@@ -1432,6 +1441,10 @@ label input{
   padding: var(--padding-smi) var(--padding-base);
   box-sizing: border-box;
   cursor: pointer;
+}
+.your-email-frame:hover{
+  background-color: var(--color-steelblue);
+  transition: 0.3s;
 }
 .subscribe-group-frame,
 .top-footer {

@@ -26,25 +26,12 @@ function openTab(evt, tabName) {
     /* Set the width of the side navigation to 250px */
 function openAssideNav() {
   document.getElementById("add-to-cart").style.width = "352px";
-  // document.body.style.opacity = "0.7";
-  // document.getElementById("add-to-cart").style.opacity = "1";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.5)"
+  document.getElementById("gray-bg").style.backgroundColor = "rgba(0,0,0,0.5)";
 }
 
 /* Set the width of the side navigation to 0 */
 function closeAssideNav() {
   document.getElementById("add-to-cart").style.width = "0";
-  document.body.style.opacity = "1";
-  document.body.style.backgroundColor = "white"
-  
+  document.getElementById("gray-bg").style.backgroundColor = "unset";
 }
 
-function openReg(){
-  // document.getElementsByClassName("modal-container").style.display = "none";
-  // document.getElementsByClassName("modal-container").style.pointer-events = "none";
-  // document.getElementsByClassName("modal-container2").style.display = "flex";
-}
-
-function openLog(){
-  document.getElementsByClassName("modal-container").style.display = "flex";
-}
