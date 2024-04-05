@@ -637,16 +637,48 @@
       </a>
     </div>
     <div class="pass-inps">
-      <input class="login-inp enter-pass" type="text"/>
-      <input class="login-inp enter-pass" type="text"/>
-      <input class="login-inp enter-pass" type="text"/>
-      <input class="login-inp enter-pass" type="text"/>
-      <input class="login-inp enter-pass" type="text"/>
+      <input id="0" class="login-inp enter-pass" type="text" maxlength="1"/>
+      <input id="1" class="login-inp enter-pass" type="text" maxlength="1"/>
+      <input id="2" class="login-inp enter-pass" type="text" maxlength="1"/>
+      <input id="3" class="login-inp enter-pass" type="text" maxlength="1"/>
+      <input id="4" class="login-inp enter-pass" type="text" maxlength="1"/>
     </div>
-
-    <a href="#succes-pass-page" id="log-butt-log-page" class="log-butt-position log-butt-shape">Register</a>
+    
+    <a href="#succes-pass-page" id="log-butt-log-page" class="log-butt-position log-butt-shape">Send OTP</a>
   </form>
   </div>
+  <script>
+    var container = document.getElementsByTagName("input");
+    // for loop to iterate through elements
+    for (let i = 0; i < container.length; i++) {
+    // create function event for keyup in input fields
+      container[i].onkeyup = function(e) {
+        //create variable for events source element
+        var target = e.srcElement;
+        //create variable for the max length attribute in the input field
+        var maxLength = parseInt(target.attributes["maxlength"].value, 10);
+        //create variable for the length of the targets value in the input
+        var myLength = target.value.length;
+        //conditional that sees if the elements value is equal tot he maxlength value 
+        //or if the enter key is pressed
+        if (e.keyCode === 13 || myLength >= maxLength) {
+          //set variable for next
+          var next = target;
+          //loop for the next element of the target
+          while (next = next.nextElementSibling) {
+            //conditional if the next is not present, so last element we break the code
+            if (next == null)
+            break;
+            //conditional to for the next element that is actually an input tag
+            if (next.tagName.toLowerCase() == "input") {
+              next.focus();
+              break;
+            }
+          }
+        }
+      }
+    }
+  </script>
 
   <div id="succes-pass-page" class="modal-container4">   
     <form class="log-form succes-pass-form">
@@ -743,6 +775,6 @@
           <img src="images/footer/twitter.svg" alt="">
         </div>
       </footer>
-
+      
 </body>
 </html>

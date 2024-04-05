@@ -641,8 +641,17 @@ header nav{
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 20px;
 }
-
+.pass-inps input{
+  text-align: center;
+  font-size: var(--header-5-bold-size);
+  font-weight: bold;
+}
+.pass-inps input:focus{
+  border-color: var(--primary-500);
+  transition: 0.5s;
+}
 
 .succes-pass-form{
   width: 392px;

@@ -35,3 +35,6 @@ function closeAssideNav() {
   document.getElementById("gray-bg").style.backgroundColor = "unset";
 }
 
+
+
+
