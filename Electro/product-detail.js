@@ -36,5 +36,33 @@ function closeAssideNav() {
 }
 
 
+function changePrice(){
+  let colors = document.getElementsByClassName("colors-group");
+
+}
+
+
+function removeItem(whichTrash , price){
+  const parentElement = whichTrash.parentNode;
+  parentElement.style.display = "none";
+  let num = document.getElementById("cart-item-numbers").innerHTML;
+  num--;
+  switch(num) {
+    case 1:
+      document.getElementById("cart-item-numbers").innerHTML = num;
+      document.getElementById("items").innerHTML = "item";
+      break;
+    case 0:
+      document.getElementById("cart-item-numbers").innerHTML = "no";
+      document.getElementById("items").innerHTML = "items";
+      break;
+    default:
+      document.getElementById("cart-item-numbers").innerHTML = num;
+  }
+  let subtotal = document.getElementById("subtotal").innerHTML;
+  subtotal = subtotal.replace("$", "");
+  subtotal = (subtotal - price).toFixed(2);
+  document.getElementById("subtotal").innerHTML = "$" + subtotal;
+}
 
 
