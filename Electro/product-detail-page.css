@@ -582,7 +582,7 @@ header nav{
   .colors-group {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     gap: var(--gap-3xs);
   }

@@ -27,6 +27,14 @@ function openTab(evt, tabName) {
 function openAssideNav() {
   document.getElementById("add-to-cart").style.width = "352px";
   document.getElementById("gray-bg").style.backgroundColor = "rgba(0,0,0,0.5)";
+  cartNum = document.getElementById("card-num-text").innerHTML;
+  if(cartNum < 2){
+    cartNum++;
+    document.getElementById("card-num-text").innerHTML = cartNum;
+  }
+  // if(document.getElementById("first-item").style.display == "none"){
+  //   document.getElementById("first-item").style.display = "flex";
+  // }
 }
 
 /* Set the width of the side navigation to 0 */
@@ -36,8 +44,52 @@ function closeAssideNav() {
 }
 
 
-function changePrice(){
-  let colors = document.getElementsByClassName("colors-group");
+function changePrice(whichColor){
+  let colors = document.getElementsByClassName("color-shape");
+
+
+
+  switch (whichColor.className) {
+    case "color-shape color-shape1":
+    document.getElementsByClassName("price-text")[0].innerHTML = "$1999.00";
+    for (let i = 0; i < colors.length; i++) {
+      colors[i].style.width = "36px";
+      colors[i].style.height = "36px";
+    }
+    document.getElementById("color1").style.width = "45px";
+    document.getElementById("color1").style.height = "45px";
+    break;
+
+    case "color-shape color-shape2":
+    document.getElementsByClassName("price-text")[0].innerHTML = "$2100.00";
+    for (let i = 0; i < colors.length; i++) {
+      colors[i].style.width = "36px";
+      colors[i].style.height = "36px";
+    }
+    document.getElementById("color2").style.width = "45px";
+    document.getElementById("color2").style.height = "45px";
+    break;
+
+    case "color-shape color-shape3":
+    document.getElementsByClassName("price-text")[0].innerHTML = "$1850.00";
+    for (let i = 0; i < colors.length; i++) {
+      colors[i].style.width = "36px";
+      colors[i].style.height = "36px";
+    }
+    document.getElementById("color3").style.width = "45px";
+    document.getElementById("color3").style.height = "45px";
+    break;
+
+    case "color-shape color-shape4":
+    document.getElementsByClassName("price-text")[0].innerHTML = "$1800.00";
+    for (let i = 0; i < colors.length; i++) {
+      colors[i].style.width = "36px";
+      colors[i].style.height = "36px";
+    }
+    document.getElementById("color4").style.width = "45px";
+    document.getElementById("color4").style.height = "45px";
+    break;
+  }
 
 }
 
@@ -63,6 +115,10 @@ function removeItem(whichTrash , price){
   subtotal = subtotal.replace("$", "");
   subtotal = (subtotal - price).toFixed(2);
   document.getElementById("subtotal").innerHTML = "$" + subtotal;
+
+  cartNum = document.getElementById("card-num-text").innerHTML;
+  cartNum--;
+  document.getElementById("card-num-text").innerHTML = cartNum;
 }
 
 
