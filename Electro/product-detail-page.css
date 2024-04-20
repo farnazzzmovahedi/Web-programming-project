@@ -284,6 +284,9 @@ header nav{
   flex-direction: row;
   position: relative;
 }
+.cart-icon{
+  cursor: pointer;
+}
 .right-icons-frame,
 .right-icons-container,
 .card-icon-frame {

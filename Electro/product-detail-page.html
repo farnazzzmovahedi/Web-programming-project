@@ -63,7 +63,7 @@
             <img src="images/search.svg" alt="">
             <img src="images/favorites.svg" alt="">
             <div class="card-icon-frame">
-            <img src="images/card.svg" alt="">
+            <img class="cart-icon" onclick="openAssideNav()" src="images/card.svg" alt="">
             <div class="card-num-frame">
                 <div class="card-num-bg"></div>
                 <b id="card-num-text" class="card-num-text">1</b>
@@ -159,7 +159,7 @@
                         <img src="images/product detail page/description/plus.svg" alt="">
                       </button>
                     </div>
-                    <button class="Add-to-Cart-position Add-to-Cart-text" onclick="openAssideNav()">Add to Cart</button>
+                    <button class="Add-to-Cart-position Add-to-Cart-text" onclick="incrementCartItemNum()">Add to Cart</button>
                     <button class="add-to-favorite">
                       <img src="images/favorites.svg" alt="">
                     </button>

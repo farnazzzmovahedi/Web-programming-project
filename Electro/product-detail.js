@@ -27,14 +27,6 @@ function openTab(evt, tabName) {
 function openAssideNav() {
   document.getElementById("add-to-cart").style.width = "352px";
   document.getElementById("gray-bg").style.backgroundColor = "rgba(0,0,0,0.5)";
-  cartNum = document.getElementById("card-num-text").innerHTML;
-  if(cartNum < 2){
-    cartNum++;
-    document.getElementById("card-num-text").innerHTML = cartNum;
-  }
-  // if(document.getElementById("first-item").style.display == "none"){
-  //   document.getElementById("first-item").style.display = "flex";
-  // }
 }
 
 /* Set the width of the side navigation to 0 */
@@ -43,6 +35,13 @@ function closeAssideNav() {
   document.getElementById("gray-bg").style.backgroundColor = "unset";
 }
 
+function incrementCartItemNum(){
+  cartNum = document.getElementById("card-num-text").innerHTML;
+  if(cartNum < 2){
+    cartNum++;
+    document.getElementById("card-num-text").innerHTML = cartNum;
+  }
+}
 
 function changePrice(whichColor){
   let colors = document.getElementsByClassName("color-shape");
