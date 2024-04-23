@@ -46,10 +46,8 @@ function incrementCartItemNum(){
 function changePrice(whichColor){
   let colors = document.getElementsByClassName("color-shape");
 
-
-
   switch (whichColor.className) {
-    case "color-shape color-shape1":
+    case "color-shape color-shape1 pre-selected":
     document.getElementsByClassName("price-text")[0].innerHTML = "$1999.00";
     for (let i = 0; i < colors.length; i++) {
       colors[i].style.width = "36px";
@@ -93,6 +91,7 @@ function changePrice(whichColor){
 }
 
 
+
 function removeItem(whichTrash , price){
   const parentElement = whichTrash.parentNode;
   parentElement.style.display = "none";
@@ -121,3 +120,57 @@ function removeItem(whichTrash , price){
 }
 
 
+function rating(whichRating){
+  const childElements = whichRating.children;
+    for (let i = 0; i < childElements.length; i++) {
+      childElements[i].src = "images/bestsellers/star.svg";
+    }
+}
+
+const form = document.getElementById('my-form');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault(); // Prevent default form submission
+
+  const radios = document.querySelectorAll('input[name="rating"]');
+
+  // Find the checked radio button
+  let selectedRadio;
+  for (const radio of radios) {
+    if (radio.checked) {
+      selectedRadio = radio;
+      break; // Exit the loop once a checked radio is found
+    }
+  }
+
+  if (selectedRadio) {
+    console.log('Selected option:', selectedRadio.value);
+  } else {
+    console.log('No option selected');
+  }
+
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const review = document.getElementById('review').value;
+  console.log('User Name:', name);
+  console.log('User Email:', email);
+  console.log('User Review:', review);
+  // You can access other form elements similarly
+});
+
+
+// const starContainers = document.querySelectorAll('.your-rating-group');
+
+// starContainers.forEach(container => {
+//   container.addEventListener('click', function() {
+//     const selectedRadio = this.querySelector('input[type="radio"]:checked');
+    
+//     if (selectedRadio) { // Check if a radio button is actually selected
+//       const starImages = this.querySelectorAll('img');
+//       for (let i = 0; i < starImages.length; i++) {
+//         // Update src attribute based on selected stars
+//         starImages[i].src = i < selectedRadio.value.split('-')[0] ? "images/bestsellers/star.svg" : "images/star-without-color.svg";
+//       }
+//     }
+//   });
+// });

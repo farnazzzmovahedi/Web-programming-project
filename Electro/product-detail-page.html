@@ -142,7 +142,7 @@
                 <b class="color-text">Color</b>
                 <div class="color-shop-group">
                   <div class="colors-group">
-                    <button id="color1" class="color-shape color-shape1" onclick="changePrice(this)"></button>
+                    <button id="color1" class="color-shape color-shape1 pre-selected" onclick="changePrice(this)"></button>
                     <button id="color2" class="color-shape color-shape2" onclick="changePrice(this)"></button>
                     <button id="color3" class="color-shape color-shape3" onclick="changePrice(this)"></button>
                     <button id="color4" class="color-shape color-shape4" onclick="changePrice(this)"></button>
@@ -302,38 +302,82 @@
               </div>
               <div class="review-separator-line"></div>
             </div>
-            <form class="frame-form" action="" method="">
+            <form id="my-form" class="frame-form" action="" method="">
               <div class="add-your-review-container">
                 <b class="add-your-review">Add your Review</b>
                 <div class="your-rating-frame">
                   <div class="customer-reviews-text">Your Rating</div>
+
                   <div class="your-rating-container">
-                    <img src="images/star-without-color.svg" alt="">
-                    <div class="star-separator-line"></div>
-                    <div class="your-rating-group">
+                    
+                    <!-- <div class="your-rating-group one-star" onclick="rating(this)">
                       <img src="images/star-without-color.svg" alt="">
-                      <img src="images/star-without-color.svg" alt="">
+                    </div> -->
+                    <div class="radio-container your-rating-group">
+                      <input type="radio" id="one-star" name="rating" value="one-star">
+                      <label for="one-star" onclick="rating(this)">
+                        <img src="images/star-without-color.svg" alt="one-star">
+                      </label>
                     </div>
                     <div class="star-separator-line"></div>
-                    <div class="your-rating-group">
+                    <!-- <div class="your-rating-group two-star" onclick="rating(this)">
                       <img src="images/star-without-color.svg" alt="">
                       <img src="images/star-without-color.svg" alt="">
-                      <img src="images/star-without-color.svg" alt="">
+                    </div> -->
+                    <div class="radio-container your-rating-group">
+                      <input type="radio" id="two-stars" name="rating" value="two-stars">
+                      <label for="two-stars" onclick="rating(this)">
+                        <img src="images/star-without-color.svg" alt="two-stars">
+                        <img src="images/star-without-color.svg" alt="two-stars">
+                      </label>
                     </div>
                     <div class="star-separator-line"></div>
-                    <div class="your-rating-group">
+                    <!-- <div class="your-rating-group three-star" onclick="rating(this)">
                       <img src="images/star-without-color.svg" alt="">
                       <img src="images/star-without-color.svg" alt="">
                       <img src="images/star-without-color.svg" alt="">
-                      <img src="images/star-without-color.svg" alt="">
+                    </div> -->
+                    <div class="radio-container your-rating-group">
+                      <input type="radio" id="three-stars" name="rating" value="three-stars">
+                      <label for="three-stars" onclick="rating(this)">
+                        <img src="images/star-without-color.svg" alt="three-stars">
+                        <img src="images/star-without-color.svg" alt="three-stars">
+                        <img src="images/star-without-color.svg" alt="three-stars">
+                      </label>
                     </div>
                     <div class="star-separator-line"></div>
-                    <div class="your-rating-group">
+                    <!-- <div class="your-rating-group four-star" onclick="rating(this)">
+                      <img src="images/star-without-color.svg" alt="">
+                      <img src="images/star-without-color.svg" alt="">
+                      <img src="images/star-without-color.svg" alt="">
+                      <img src="images/star-without-color.svg" alt="">
+                    </div> -->
+                    <div class="radio-container your-rating-group">
+                      <input type="radio" id="four-stars" name="rating" value="four-stars">
+                      <label for="four-stars" onclick="rating(this)">
+                        <img src="images/star-without-color.svg" alt="four-stars">
+                        <img src="images/star-without-color.svg" alt="four-stars">
+                        <img src="images/star-without-color.svg" alt="four-stars">
+                        <img src="images/star-without-color.svg" alt="four-stars">
+                      </label>
+                    </div>
+                    <div class="star-separator-line"></div>
+                    <!-- <div class="your-rating-group five-star" onclick="rating(this)">
                       <img src="images/star-without-color.svg" alt="">
                       <img src="images/star-without-color.svg" alt="">
                       <img src="images/star-without-color.svg" alt="">
                       <img src="images/star-without-color.svg" alt="">
                       <img src="images/star-without-color.svg" alt="">
+                    </div> -->
+                    <div class="radio-container your-rating-group">
+                      <input type="radio" id="five-stars" name="rating" value="five-stars">
+                      <label for="five-stars" onclick="rating(this)">
+                        <img src="images/star-without-color.svg" alt="five-stars">
+                        <img src="images/star-without-color.svg" alt="five-stars">
+                        <img src="images/star-without-color.svg" alt="five-stars">
+                        <img src="images/star-without-color.svg" alt="five-stars">
+                        <img src="images/star-without-color.svg" alt="five-stars">
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -341,7 +385,7 @@
                   <input id="name" name="name" placeholder="Enter Your Name" type="text"/>
                 </label>
                 <label for="email">Email Address
-                  <input id="email" name="email" placeholder="Enter Your Email" type="text"/>
+                  <input id="email" name="email" placeholder="Enter Your Email" type="email"/>
                 </label>
                 <label for="review">Your Review
                   <input id="review" name="review" placeholder="Enter Your Review" type="text"/>
