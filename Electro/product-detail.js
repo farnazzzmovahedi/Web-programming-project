@@ -119,13 +119,67 @@ function removeItem(whichTrash , price){
   document.getElementById("card-num-text").innerHTML = cartNum;
 }
 
+document.addEventListener('DOMContentLoaded', () =>{
+  const oneStar = document.getElementById("click-one-star");
+  const twoStar = document.getElementById("click-two-stars");
+  const threeStar = document.getElementById("click-three-stars");
+  const fourStar = document.getElementById("click-four-stars");
+  const fiveStar = document.getElementById("click-five-stars");
 
-function rating(whichRating){
-  const childElements = whichRating.children;
-    for (let i = 0; i < childElements.length; i++) {
-      childElements[i].src = "images/bestsellers/star.svg";
+  const children1 =  oneStar.children;
+  const children2 =  twoStar.children;
+  const children3 =  threeStar.children;
+  const children4 =  fourStar.children;
+  const children5 =  fiveStar.children;
+
+  function removeStars(){
+    for (let i = 0; i < children1.length; i++) {
+      children1[i].src = "images/star-without-color.svg";
     }
-}
+    for (let i = 0; i < children2.length; i++) {
+      children2[i].src = "images/star-without-color.svg";
+    }
+    for (let i = 0; i < children3.length; i++) {
+      children3[i].src = "images/star-without-color.svg";
+    }
+    for (let i = 0; i < children4.length; i++) {
+      children4[i].src = "images/star-without-color.svg";
+    }
+    for (let i = 0; i < children5.length; i++) {
+      children5[i].src = "images/star-without-color.svg";
+    }
+  }
+  function addStar(childrenInput){
+    for (let i = 0; i < childrenInput.length; i++) {
+      childrenInput[i].src = "images/bestsellers/star.svg";
+    }
+  }
+  oneStar.addEventListener('click', () => {
+   removeStars();
+   addStar(children1);
+  });
+
+  twoStar.addEventListener('click', () => {
+    removeStars();
+   addStar(children2);
+  });
+
+  threeStar.addEventListener('click', () => {
+    removeStars();
+   addStar(children3);
+  });
+
+  fourStar.addEventListener('click', () => {
+    removeStars();
+   addStar(children4);
+  });
+
+  fiveStar.addEventListener('click', () => {
+    removeStars();
+   addStar(children5);
+  });
+
+});
 
 const form = document.getElementById('my-form');
 
