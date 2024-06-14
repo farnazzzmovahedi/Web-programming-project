@@ -774,6 +774,7 @@ header nav{
   font-size: var(--body-1-regular-size);
   color: var(--white-500);
   cursor: pointer;
+  text-decoration: none;
 }
 .shop-now-butt:hover{
   background-color: var(--color-steelblue);

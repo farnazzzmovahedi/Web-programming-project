@@ -87,10 +87,7 @@ function changePrice(whichColor){
     document.getElementById("color4").style.height = "45px";
     break;
   }
-
 }
-
-
 
 function removeItem(whichTrash , price){
   const parentElement = whichTrash.parentNode;
