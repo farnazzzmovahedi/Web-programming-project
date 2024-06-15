@@ -6,6 +6,7 @@ from django.urls import path
 
 urlpatterns = [
     path('', views.HomePageView.as_view(), name="home-page"),
+    path('detail', views.DetailPageView.as_view(), name="detail-page"),
 ]
 
 if settings.DEBUG:

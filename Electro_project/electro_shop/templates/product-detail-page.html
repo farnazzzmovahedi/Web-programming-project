@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/electro_shop/product-detail-page.css">
+    <link rel="stylesheet" href="../static/electro_shop/global-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"/>
+</head>
+<body>
+  <div id="gray-bg"></div>
+  <header class="header">
+    <form class="right-header">
+        <div class="top-left-header">
+        <div class="logo-container">
+            <img loading="lazy" alt="" src="../static/electro_shop/images/logo.svg"/>
+        </div>
+        <div class="search-bar">
+            <div class="search-bar-filter-frame">
+            <div class="search-bar-filter-container">
+                <div class="text">All</div>
+                <img alt="" src="../static/electro_shop/images/search-bar-filter.svg" />
+            </div>
+            </div>
+            <div class="search-bar-inp-frame">
+            <div class="search-bar-inp-container">
+                <img alt="" src="../static/electro_shop/images/search.svg" />
+                <input class="search-inp" placeholder="Search" type="text" />
+            </div>
+            </div>
+            <button class="search-butt-position search-butt-shape">Search</button>
+        </div>
+        </div>
+        <div class="buttom-header">
+          <div>
+            <div class="buttom-left-header-frame">
+              <div class="hamburger-menu-container">
+                  <img alt="" src="../static/electro_shop/images/hamburger-menu.svg" />
+              </div>
+              <div class="text">All Categories</div>
+              <div class="filter-img-container">
+                  <img alt="" src="../static/electro_shop/images/search-bar-filter.svg" />
+              </div>
+            </div>
+          </div>
+          <nav class="main-menu">
+            <ul>
+              <li class="main-menu-item">Home</li>
+              <li class="main-menu-item shop-filter-icon">Shop
+                <img src="../static/electro_shop/images/shop-filter.svg" alt="">
+              </li>
+              <li class="main-menu-item">About Us</li>
+              <li class="main-menu-item">Blog</li>
+              <li class="main-menu-item">Contact Us</li>
+            </ul>
+          </nav>
+        </div>
+    </form>
+    <div class="top-right-header">
+        <div class="right-icons-frame">
+        <div class="right-icons-container">
+            <img src="../static/electro_shop/images/search.svg" alt="">
+            <img src="../static/electro_shop/images/favorites.svg" alt="">
+            <div class="card-icon-frame">
+            <img class="cart-icon" onclick="openAssideNav()" src="../static/electro_shop/images/card.svg" alt="">
+            <div class="card-num-frame">
+                <div class="card-num-bg"></div>
+                <b id="card-num-text" class="card-num-text">1</b>
+            </div>
+            </div>
+        </div>
+        </div>
+        <button class="log-butt-position log-butt-shape">Login</button>
+    </div>
+  </header>
+    <main class="parent-complex">
+      <section class="descendant-segment">
+        <div class="leaf-family">
+          <div class="main-section">
+            <div class="main-section-left">
+              <div class="nested-menu">
+                <div class="text">Home</div>
+                <div class="nested-menu-group">
+                  <img alt="" src="../static/electro_shop/images/direction-right.svg"/>
+                </div>
+                <div class="text">Shop</div>
+                <div class="nested-menu-group">
+                  <img alt="" src="../static/electro_shop/images/direction-right.svg"/>
+                </div>
+                <div class="text">Apple iPhone 14 Pro</div>
+              </div>
+              <div class="product-detail-imgs">
+                <div class="product-detail-main-img-bg">
+                  <img loading="lazy" alt="" src="../static/electro_shop/images/product detail page/description/Apple iPhone 14 Pro.svg"/>
+                </div>
+                <div class="product-detail-other-imgs-group">
+                  <div class="product-detail-other-imgs-bg">
+                    <img loading="lazy" alt="" src="../static/electro_shop/images/product detail page/description/Apple iPhone 14 Pro(kocholo).svg"/>
+                  </div>
+                  <div class="product-detail-other-imgs-bg">
+                    <img loading="lazy" alt="" src="../static/electro_shop/images/product detail page/description/Apple iPhone 14 Pro(kocholo).svg"/>
+                  </div>
+                  <div class="product-detail-other-imgs-bg">
+                    <img loading="lazy" alt="" src="../static/electro_shop/images/product detail page/description/Apple iPhone 14 Pro(kocholo).svg"/>
+                  </div>
+                  <div class="product-detail-other-imgs-bg">
+                    <img loading="lazy" alt="" src="../static/electro_shop/images/product detail page/description/Apple iPhone 14 Pro(kocholo).svg"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main-section-right">
+              <div class="main-section-right-top">
+                <div class="first-detail-group">
+                  <h2 class="product-detail-title">Apple iPhone 14 Pro</h2>
+                  <div class="main-details-group">
+                    <div class="rating-rev-group">
+                      <div class="rating-group-container">
+                        <div class="rating-group">
+                          <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                          <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                          <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                          <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                          <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                        </div>
+                      </div>
+                      <div class="reviews-text">5.0 (121 Reviews)</div>
+                    </div>
+                    <div class="price-text">$1999.00</div>
+                  </div>
+                </div>
+                <div class="product-status">In Stock</div>
+              </div>
+              <div class="main-content">
+                It is a long established fact that a reader will be
+                distracted by the readable content of a page when looking
+                at its layout. The point of using Lorem Ipsum is that it
+                has a more-or-less normal distribution.
+              </div>
+              <div class="main-section-right-buttom">
+                <b class="color-text">Color</b>
+                <div class="color-shop-group">
+                  <div class="colors-group">
+                    <button id="color1" class="color-shape color-shape1 pre-selected" onclick="changePrice(this)"></button>
+                    <button id="color2" class="color-shape color-shape2" onclick="changePrice(this)"></button>
+                    <button id="color3" class="color-shape color-shape3" onclick="changePrice(this)"></button>
+                    <button id="color4" class="color-shape color-shape4" onclick="changePrice(this)"></button>
+                  </div>
+                  <div class="shop-section-group">
+                    <div class="numbers-wanted-group">
+                      <button class="minus-container">
+                        <img src="../static/electro_shop/images/product detail page/description/minus.svg" alt="">
+                      </button>
+                      <div class="numbers-wanted-container">
+                        <div class="numbers-wanted">1</div>
+                      </div>
+                      <button class="plus-container">
+                        <img src="../static/electro_shop/images/product detail page/description/plus.svg" alt="">
+                      </button>
+                    </div>
+                    <button class="Add-to-Cart-position Add-to-Cart-text" onclick="incrementCartItemNum()">Add to Cart</button>
+                    <button class="add-to-favorite">
+                      <img src="../static/electro_shop/images/favorites.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+                <div class="share-section-group">
+                  <b class="color-text">Share</b>
+                  <div class="share-butts-container">
+                    <button class="share-butts">
+                      <img src="../static/electro_shop/images/product detail page/description/facebook.svg" alt="">
+                    </button>
+                    <button class="share-butts">
+                      <img src="../static/electro_shop/images/product detail page/description/twitter.svg" alt="">
+                    </button>
+                    <button class="share-butts">
+                      <img src="../static/electro_shop/images/product detail page/description/instagram.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="detail-menu-frame">
+            <div class="detail-menu-group">
+              <div class="detail-menu">
+                <button class="detail-menu-text active" onclick="openTab(event, 'descriptions-content')">Descriptions</button>
+                <button class="detail-menu-text" onclick="openTab(event, 'information-content')">Additional Information</button>
+                <button class="detail-menu-text" onclick="openTab(event, 'reviews-content')">Reviews</button>
+              </div>
+            </div>
+            <!-- taaaaaaaaaaaaaaab -->
+            <div id="descriptions-content" class="tab-content">
+              <p class="text">
+                t is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here, content here', making it look like readable English.
+                Many desktop publishing packages and web page editors now use
+                Lorem Ipsum as their default model text, and a search for
+                'lorem ipsum' will uncover many web sites still in their
+                infancy.
+              </p>
+              <p class="blank-line">&nbsp;</p>
+              <p class="text">
+                Various versions have evolved over the years, sometimes by
+                accident, sometimes on purpose (injected humour and the like).
+              </p>
+            </div>
+            <div id="information-content" class="tab-content">
+              <table>
+                <tr>
+                  <th>Brand</th>
+                  <td>Apple</td>
+                </tr>
+                <tr>
+                  <th>Item Height</th>
+                  <td>65 CM</td>
+                </tr>
+                <tr>
+                  <th>Item Width</th>
+                  <td>31.4 CM</td>
+                </tr>
+                <tr>
+                  <th>Screen Size</th>
+                  <td>6.5 Inch</td>
+                </tr>
+                <tr>
+                  <th>Model Number</th>
+                  <td>MF841HN/A</td>
+                </tr>
+                <tr>
+                  <th>RAM Size</th>
+                  <td>6 GB</td>
+                </tr>
+                <tr>
+                  <th>Operating System</th>
+                  <td>ios 17</td>
+                </tr>
+                </table>
+            </div>
+            <div id="reviews-content" class="tab-content">
+              <div class="all-reviews-container">
+                  <b class="customer-reviews-title">Customer Reviews</b>
+                  <div class="customer-review-header">
+                    <img class="profile-photo" loading="lazy" alt=""src="../static/electro_shop/images/product detail page/reviews/mark.png"/>
+                    <div class="name-rating-group">
+                      <div class="customer-reviews-text">Mark Williams</div>
+                      <div class="rating-group">
+                        <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                        <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                        <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                        <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                        <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                <b class="customer-reviews-text">Excellent Product, I Love It 😍</b>
+                <p class="customer-reviews-text">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using 'Content
+                  here, content here', making it look like readable English.
+                </p>
+                <div class="review-by-posted-on-container">
+                  <span class="review-by-posted-on">Review by </span>
+                  <span class="review-by-posted-on-content">Electro</span>
+                  <span class="review-by-posted-on"> Posted on </span>
+                  <span class="review-by-posted-on-content">Sep 08, 2023</span>
+                </div>
+                <div class="review-separator-line"></div>
+
+                <div class="customer-review-header">
+                  <img class="profile-photo" loading="lazy" alt=""src="../static/electro_shop/images/product detail page/reviews/alexa.png"/>
+                  <div class="name-rating-group">
+                    <div class="customer-reviews-text">Alexa Johnson</div>
+                    <div class="rating-group">
+                      <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                      <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                      <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                      <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                      <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              <b class="customer-reviews-text">My Brother is very much happy with this iPhone</b>
+              <p class="customer-reviews-text">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here, content here', making it look like readable English.
+              </p>
+              <div class="review-by-posted-on-container">
+                <span class="review-by-posted-on">Review by </span>
+                <span class="review-by-posted-on-content">Electro</span>
+                <span class="review-by-posted-on"> Posted on </span>
+                <span class="review-by-posted-on-content">Sep 08, 2023</span>
+              </div>
+              <div class="review-separator-line"></div>
+            </div>
+            <form id="my-form" class="frame-form" action="" method="">
+              <div class="add-your-review-container">
+                <b class="add-your-review">Add your Review</b>
+                <div class="your-rating-frame">
+                  <div class="customer-reviews-text">Your Rating</div>
+
+                  <div class="your-rating-container">
+                    
+                    <!-- <div class="your-rating-group one-star" onclick="rating(this)">
+                      <img src="../static/electro_shop/images/star-without-color.svg" alt="">
+                    </div> -->
+                    <div class="radio-container your-rating-group">
+                      <input type="radio" id="one-star" name="rating" value="one-star">
+                      <label id="click-one-star" for="one-star">
+                        <img src="../static/electro_shop/images/star-without-color.svg" alt="one-star">
+                      </label>
+                    </div>
+                    <div class="star-separator-line"></div>
+                    <!-- <div class="your-rating-group two-star" onclick="rating(this)">
+                      <img src="../static/electro_shop/images/star-without-color.svg" alt="">
+                      <img src="../static/electro_shop/images/star-without-color.svg" alt="">
+                    </div> -->
+                    <div class="radio-container your-rating-group">
+                      <input type="radio" id="two-stars" name="rating" value="two-stars">
+                      <label id="click-two-stars" for="two-stars">
+                        <img src="../static/electro_shop/images/star-without-color.svg" alt="two-stars">
+                        <img src="../static/electro_shop/images/star-without-color.svg" alt="two-stars">
+                      </label>
+                    </div>
+                    <div class="star-separator-line"></div>
+                    <!-- <div class="your-rating-group three-star" onclick="rating(this)">
+                      <img src="../static/electro_shop/images/star-without-color.svg" alt="">
+                      <img src="../static/electro_shop/images/star-without-color.svg" alt="">
+                      <img src="../static/electro_shop/images/star-without-color.svg" alt="">
+                    </div> -->
+                    <div class="radio-container your-rating-group">
+                      <input type="radio" id="three-stars" name="rating" value="three-stars">
+                      <label id="click-three-stars" for="three-stars">
+                        <img src="../static/electro_shop/images/star-without-color.svg" alt="three-stars">
+                        <img src="../static/electro_shop/images/star-without-color.svg" alt="three-stars">
+                        <img src="../static/electro_shop/images/star-without-color.svg" alt="three-stars">
+                      </label>
+                    </div>
+                    <div class="star-separator-line"></div>
+                    <!-- <div class="your-rating-group four-star" onclick="rating(this)">
+                      <img src="../static/electro_shop/images/star-without-color.svg" alt="">
+                      <img src="../static/electro_shop/images/star-without-color.svg" alt="">
+                      <img src="../static/electro_shop/images/star-without-color.svg" alt="">
+                      <img src="../static/electro_shop/images/star-without-color.svg" alt="">
+                    </div> -->
+                    <div class="radio-container your-rating-group">
+                      <input type="radio" id="four-stars" name="rating" value="four-stars">
+                      <label id="click-four-stars" for="four-stars">
+                        <img src="../static/electro_shop/images/star-without-color.svg" alt="four-stars">
+                        <img src="../static/electro_shop/images/star-without-color.svg" alt="four-stars">
+                        <img src="../static/electro_shop/images/star-without-color.svg" alt="four-stars">
+                        <img src="../static/electro_shop/images/star-without-color.svg" alt="four-stars">
+                      </label>
+                    </div>
+                    <div class="star-separator-line"></div>
+                    <!-- <div class="your-rating-group five-star" onclick="rating(this)">
+                      <img src="../static/electro_shop/images/star-without-color.svg" alt="">
+                      <img src="../static/electro_shop/images/star-without-color.svg" alt="">
+                      <img src="../static/electro_shop/images/star-without-color.svg" alt="">
+                      <img src="../static/electro_shop/images/star-without-color.svg" alt="">
+                      <img src="../static/electro_shop/images/star-without-color.svg" alt="">
+                    </div> -->
+                    <div class="radio-container your-rating-group">
+                      <input type="radio" id="five-stars" name="rating" value="five-stars">
+                      <label id="click-five-stars" for="five-stars">
+                        <img src="../static/electro_shop/images/star-without-color.svg" alt="five-stars">
+                        <img src="../static/electro_shop/images/star-without-color.svg" alt="five-stars">
+                        <img src="../static/electro_shop/images/star-without-color.svg" alt="five-stars">
+                        <img src="../static/electro_shop/images/star-without-color.svg" alt="five-stars">
+                        <img src="../static/electro_shop/images/star-without-color.svg" alt="five-stars">
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <label for="name">Name
+                  <input id="name" name="name" placeholder="Enter Your Name" type="text"/>
+                </label>
+                <label for="email">Email Address
+                  <input id="email" name="email" placeholder="Enter Your Email" type="email"/>
+                </label>
+                <label for="review">Your Review
+                  <input id="review" name="review" placeholder="Enter Your Review" type="text"/>
+                </label>
+              </div>
+              <input class="submit-butt" type="submit" value="Submit">
+            </form>
+          </div>
+
+            <script src="../static/electro_shop/product-detail.js"></script>
+
+          </div>
+        </div>
+        <div class="related-products-frame">
+          <b class="related-products-text">Related Products</b>
+          <div class="related-products-container">
+            <div class="related-products-item-container">
+              <div class="related-products-img-bg">
+                <img class="related-products-imgs" loading="lazy" alt="" src="../static/electro_shop/images/product detail page/Apple iPhone 14 Plus.png"/>
+              </div>
+              <div class="item-content">
+                <div class="title-rating-group">
+                  <b class="item-text">Apple iPhone 14 Plus</b>
+                  <div class="rating-group">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  </div>
+                </div>
+                <div class="price">$850.00</div>
+              </div>
+            </div>
+            <div class="related-products-item-container">
+              <div class="related-products-img-bg">
+                <img class="related-products-imgs" loading="lazy" alt="" src="../static/electro_shop/images/product detail page/Xiaomi Fimi X8 Mini.png"/>
+              </div>
+              <div class="item-content">
+                <div class="title-rating-group">
+                  <b class="item-text">Xiaomi Fimi X8 Mini</b>
+                  <div class="rating-group">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  </div>
+                </div>
+                <div class="price">$650.00</div>
+              </div>
+            </div>
+            <div class="related-products-item-container">
+              <div class="related-products-img-bg">
+                <img class="related-products-imgs" loading="lazy" alt="" src="../static/electro_shop/images/product detail page/apple ipad mini6.png"/>
+              </div>
+              <div class="item-content">
+                <div class="title-rating-group">
+                  <b class="item-text">Apple iPad Mini 6 Wi-Fi</b>
+                  <div class="rating-group">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  </div>
+                </div>
+                <div class="price">$500.00</div>
+              </div>
+            </div>
+            <div class="related-products-item-container">
+              <div class="related-products-img-bg">
+                <img class="related-products-imgs" loading="lazy" alt="" src="../static/electro_shop/images/product detail page/Asus ROG Delta S.png"/>
+              </div>
+              <div class="item-content">
+                <div class="title-rating-group">
+                  <b class="item-text">Asus ROG Delta S</b>
+                  <div class="rating-group">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  </div>
+                </div>
+                <div class="price">$250.00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <aside>
+      <div id="add-to-cart" class="add-to-cart">
+        <div>
+          <span>You have <b id="cart-item-numbers">2</b> <b id="items"> items</b> in your cart</span>
+          <div class="cart-item-group" id="first-item">
+            <div class="cart-item-img-bg">
+              <img loading="lazy" alt="" src="../static/electro_shop/images/mini cart/Apple iPhone 14 Pro.svg"/>
+            </div>
+            <div class="cart-item-text">Apple iPhone 14 Pro <br> <b>$1999.00</b> <br>QTY: 1</div>
+            <img id="trash" onclick="removeItem(this , 1999.00)" class="trash-button" src="../static/electro_shop/images/mini cart/trash.svg" alt="">
+            <div class="cart-item-separator-line"></div>
+          </div>
+          <div class="cart-item-group">
+            <div class="cart-item-img-bg">
+              <img loading="lazy" alt="" src="../static/electro_shop/images/mini cart/Asus ROG Delta S.svg"/>
+            </div>
+            <div class="cart-item-text">Asus ROG Delta S <br> <b>$250.00</b> <br>QTY: 1</div>
+            <img id="trash" onclick="removeItem(this , 250.00)" class="trash-button" src="../static/electro_shop/images/mini cart/trash.svg" alt="">
+            <div class="cart-item-separator-line"></div>
+          </div>
+        </div>
+
+        <div class="buttom-section">
+          <div class="sub-price">
+            <b>Subtotal</b>
+            <b id="subtotal">$2249.00</b>
+          </div>
+
+          <button class="cart-butts" id="view-cart-butt">View Cart</button>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeAssideNav()"><button class="cart-butts">Chekout</button></a>
+        </div>
+      </div>
+    </aside>
+
+    <footer class="footer">
+      <div class="blue-bg"></div>
+      <div class="top-footer">
+        <div class="top-left-footer">
+          <img class="footer-logo" alt="" src="../static/electro_shop/images/footer/footer-logo.svg" />
+          <div class="contact-us-group">
+            <div class="call-section">
+              <div class="icon-img-group">
+                <img src="../static/electro_shop/images/footer/calling.svg" alt="">
+              </div>
+              <div class="phone-number-text">(316) 555-0116</div>
+            </div>
+            <div class="mail-section">
+              <div class="icon-img-group">
+                <img src="../static/electro_shop/images/footer/gmail.svg" alt="">
+              </div>
+              <div class="phone-number-text">electro@example.com</div>
+            </div>
+            <div class="location-section">
+              <img src="../static/electro_shop/images/footer/location.svg" alt="">
+              <p class="location-text">4140 Parker Rd. Allentown,<br>New Mexico 31134</p>
+            </div>
+          </div>
+        </div>
+        <div class="information-group">
+          <b>Information</b>
+          <div class="information-sub-butts">
+            <button>My Account</button>
+            <button>Login</button>
+            <button>My Cart</button>
+            <button>My Wishlist</button>
+            <button>Checkout</button>
+          </div>
+        </div>
+        <div class="information-group">
+          <b>Service</b>
+          <div class="information-sub-butts">
+            <button>About Us</button>
+            <button>Careers</button>
+            <button>Delivery Information</button>
+            <button>Privacy Policy</button>
+            <button>Terms & Conditions</button>
+          </div>
+        </div>
+        <div class="subscribe-group-frame">
+          <div class="subscribe-group">
+            <b>Subscribe</b>
+            <div class="subscribe-content">
+              Enter your email below to be the first to know about new
+              collections.
+            </div>
+          </div>
+          <div class="your-email-frame">
+            <div class="your-email-container">
+              <div class="your-email-group">
+                <img src="../static/electro_shop/images/footer/gmail.svg" alt="">
+                <div class="subscribe-content">Your Email</div>
+              </div>
+              <img src="../static/electro_shop/images/arrow-right.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttom-footer">
+        <div class="footer-line"></div>
+        <div class="buttom-footer-container">
+          <div class="buttom-left-footer">
+            <div class="payment-imgs-group">
+              <img src="../static/electro_shop/images/footer/sponsor1.svg" alt="">
+              <img src="../static/electro_shop/images/footer/sponsor2.svg" alt="">
+              <img src="../static/electro_shop/images/footer/sponsor3.svg" alt="">
+              <img src="../static/electro_shop/images/footer/sponsor4.svg" alt="">
+              <img src="../static/electro_shop/images/footer/sponsor5.svg" alt="">
+            </div>
+            <div class="subscribe-content">©2023 Electro All Rights are reserved️</div>
+          </div>
+          <div class="social-media-icon-group">
+            <img src="../static/electro_shop/images/footer/facebook.svg" alt="">
+            <img src="../static/electro_shop/images/footer/instagram.svg" alt="">
+            <img src="../static/electro_shop/images/footer/twitter.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

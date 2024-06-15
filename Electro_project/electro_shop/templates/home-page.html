@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     {% block title %} Home Page {% endblock %}
     {% block head %}
-    <link rel="stylesheet" href="../../static/electro_shop/home-page.css?{% now "U" %}">
+    <link rel="stylesheet" href="../static/electro_shop/home-page.css?{% now "U" %}">
     <!-- <link rel="stylesheet" href="global.css"> -->
-    <link rel="stylesheet" href="../../static/electro_shop/global-style.css">
+    <link rel="stylesheet" href="../static/electro_shop/global-style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% endblock %}
@@ -19,18 +19,18 @@
       <form class="right-header">
           <div class="top-left-header">
           <div class="logo-container">
-              <img loading="lazy" alt="" src="../../static/electro_shop/images/logo.svg"/>
+              <img loading="lazy" alt="" src="../static/electro_shop/images/logo.svg"/>
           </div>
           <div class="search-bar">
               <div class="search-bar-filter-frame">
               <div class="search-bar-filter-container">
                   <div class="text">All</div>
-                  <img alt="" src="../../static/electro_shop/images/search-bar-filter.svg" />
+                  <img alt="" src="../static/electro_shop/images/search-bar-filter.svg" />
               </div>
               </div>
               <div class="search-bar-inp-frame">
               <div class="search-bar-inp-container">
-                  <img alt="" src="../../static/electro_shop/images/search.svg" />
+                  <img alt="" src="../static/electro_shop/images/search.svg" />
                   <input class="search-inp" placeholder="Search" type="text" />
               </div>
               </div>
@@ -41,11 +41,11 @@
             <div>
               <div class="buttom-left-header-frame">
                 <div class="hamburger-menu-container">
-                    <img alt="" src="../../static/electro_shop/images/hamburger-menu.svg" />
+                    <img alt="" src="../static/electro_shop/images/hamburger-menu.svg" />
                 </div>
                 <div class="text">All Categories</div>
                 <div class="filter-img-container">
-                    <img alt="" src="../../static/electro_shop/images/search-bar-filter.svg" />
+                    <img alt="" src="../static/electro_shop/images/search-bar-filter.svg" />
                 </div>
               </div>
             </div>
@@ -53,7 +53,7 @@
               <ul>
                 <li class="main-menu-item">Home</li>
                 <li class="main-menu-item shop-filter-icon">Shop
-                  <img src="../../static/electro_shop/images/shop-filter.svg" alt="">
+                  <img src="../static/electro_shop/images/shop-filter.svg" alt="">
                 </li>
                 <li class="main-menu-item">About Us</li>
                 <li class="main-menu-item">Blog</li>
@@ -65,10 +65,10 @@
       <div class="top-right-header">
           <div class="right-icons-frame">
           <div class="right-icons-container">
-              <img src="../../static/electro_shop/images/search.svg" alt="">
-              <img src="../../static/electro_shop/images/favorites.svg" alt="">
+              <img src="../static/electro_shop/images/search.svg" alt="">
+              <img src="../static/electro_shop/images/favorites.svg" alt="">
               <div class="card-icon-frame">
-              <img src="../../static/electro_shop/images/card.svg" alt="">
+              <img src="../static/electro_shop/images/card.svg" alt="">
               <div class="card-num-frame">
                   <div class="card-num-bg"></div>
                   <b class="card-num-text">2</b>
@@ -98,8 +98,8 @@
           point of using Lorem Ipsum.
         </p>
       </div>
-        <a href="{{ mainBanner.butt_link }}" class="shop-now-butt">Shop Now
-          <img src="../../static/electro_shop/images/shop-now.svg" alt="">
+        <a {% if user_logged_in != None %} href="{{ mainBanner.butt_link }}" {% endif %} class="shop-now-butt">Shop Now
+          <img src="../static/electro_shop/images/shop-now.svg" alt="">
         </a>
     </section> 
   </div>
@@ -111,50 +111,50 @@
     <div class="shop-by-catrgories-header">
       <b class="shop-by-catrgories">Shop by Categories</b>
       <div class="action">
-        <button class="left-butt"><img src="../../static/electro_shop/images/arrow-left.svg" alt=""></button>
-        <button class="right-butt"><img src="../../static/electro_shop/images/arrow-right.svg" alt=""></button>
+        <button class="left-butt"><img src="../static/electro_shop/images/arrow-left.svg" alt=""></button>
+        <button class="right-butt"><img src="../static/electro_shop/images/arrow-right.svg" alt=""></button>
       </div>
     </div>
     <div class="all-products">
       <div class="group-child">
         <div class="ellipse-container">
           <div class="img-bg"></div>
-          <img class="shop-imgs" alt="" src="../../static/electro_shop/images/shop by categories/phone.png" />
+          <img class="shop-imgs" alt="" src="../static/electro_shop/images/shop%20by%20categories/phone.png" />
         </div>
         <b class="text">Mobile Phones</b>
       </div>
       <div class="group-child">
         <div class="ellipse-container">
           <div class="img-bg"></div>
-          <img class="shop-imgs" alt="" src="../../static/electro_shop/images/shop by categories/tv.png"/>
+          <img class="shop-imgs" alt="" src="../static/electro_shop/images/shop%20by%20categories/tv.png"/>
         </div>
         <b class="text">Smart TV</b>
       </div>
       <div class="group-child">
         <div class="ellipse-container">
           <div class="img-bg"></div>
-          <img class="shop-imgs" alt="" src="../../static/electro_shop/images/shop by categories/watch.png"/>
+          <img class="shop-imgs" alt="" src="../static/electro_shop/images/shop%20by%20categories/watch.png"/>
         </div>
         <b class="text">Smart Watch</b>
       </div>
       <div class="group-child">
         <div class="ellipse-container">
           <div class="img-bg"></div>
-          <img class="shop-imgs" alt="" src="../../static/electro_shop/images/shop by categories/laptop.png"/>
+          <img class="shop-imgs" alt="" src="../static/electro_shop/images/shop%20by%20categories/laptop.png"/>
         </div>
         <b class="text">Laptops</b>
       </div>
       <div class="group-child">
         <div class="ellipse-container">
           <div class="img-bg"></div>
-          <img class="shop-imgs" alt="" src="../../static/electro_shop/images/shop by categories/drone.png"/>
+          <img class="shop-imgs" alt="" src="../static/electro_shop/images/shop%20by%20categories/drone.png"/>
         </div>
         <b class="text">Drones</b>
       </div>
       <div class="group-child">
         <div class="ellipse-container">
           <div class="img-bg"></div>
-          <img class="shop-imgs" alt="" src="../../static/electro_shop/images/shop by categories/headphone.png"/>
+          <img class="shop-imgs" alt="" src="../static/electro_shop/images/shop%20by%20categories/headphone.png"/>
         </div>
         <b class="text">Headphones</b>
       </div>
@@ -167,14 +167,14 @@
   <section class="ads">
     <a class="ad-shape">
       <div class="ad-container"></div>
-      <img class="ad-img" src="../../static/electro_shop/images/ad-laptop.svg" alt="">
+      <img class="ad-img" src="../static/electro_shop/images/ad-laptop.svg" alt="">
       <div class="ad-frame">
         <div class="ad-full-content">
           <b class="ad-topic">Mackbook Air M2</b>
           <div class="ad-content">Don’t miss the last opportunity</div>
         </div>
         <button class="shop-now-butt">Shop Now
-          <img src="../../static/electro_shop/images/shop-now.svg" alt="">
+          <img src="../static/electro_shop/images/shop-now.svg" alt="">
         </button>
       </div>
       <div class="off">
@@ -183,14 +183,14 @@
     </a>
     <a href="product-detail-page.html" class="ad-shape">
       <div class="ad-container"></div>
-      <img class="ad-img" src="../../static/electro_shop/images/ad-phone.svg" alt="">
+      <img class="ad-img" src="../static/electro_shop/images/ad-phone.svg" alt="">
       <div class="ad-frame">
         <div class="ad-full-contentt">
           <b class="ad-topic">Iphone 14 Pro</b>
           <div class="ad-content">Don’t miss the last opportunity</div>
         </div>
         <button class="shop-now-butt">Shop Now
-          <img src="../../static/electro_shop/images/shop-now.svg" alt="">
+          <img src="../static/electro_shop/images/shop-now.svg" alt="">
         </button>
       </div>
       <div class="off">
@@ -218,7 +218,7 @@
     <div class="bestseller-main">
       <div class="left-bold">
         <div class="left-bold-container"></div>
-        <img class="ad-img" alt="" src="../../static/electro_shop/images/bestsellers/apple ipad pro.svg"/>
+        <img class="ad-img" alt="" src="../static/electro_shop/images/bestsellers/apple%20ipad%20pro.svg"/>
         <b class="apple-ipad-pro-container">
           <p class="apple-ipad-pro">Apple iPad Pro <br>Wi-Fi</p>
         </b>
@@ -228,16 +228,16 @@
         <div class="group">
           <div class="group-items">
             <div class="item-container"></div>
-            <img class="item-img" alt="" src="../../static/electro_shop/images/bestsellers/apple ipad mini6.png"/>
+            <img class="item-img" alt="" src="../static/electro_shop/images/bestsellers/apple%20ipad%20mini6.png"/>
             <div class="frame">
               <div class="inner-frame">
                 <b class="text">Apple iPad Mini 6 Wi-Fi</b>
                 <div class="rating-group">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
                 </div>
               </div>
               <div class="right-price">$500.00</div>
@@ -245,16 +245,16 @@
           </div>
           <div class="group-items">
             <div class="item-container"></div>
-            <img class="item-img" alt="" src="../../static/electro_shop/images/bestsellers/Microsoft Surface.png"/>
+            <img class="item-img" alt="" src="../static/electro_shop/images/bestsellers/Microsoft%20Surface.png"/>
             <div class="frame">
               <div class="inner-frame">
                 <b class="text">Microsoft Surface Go</b>
                 <div class="rating-group">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
                 </div>
               </div>
               <div class="right-price">$399.00</div>
@@ -262,16 +262,16 @@
           </div>
           <div class="group-items">
             <div class="item-container"></div>
-            <img class="item-img" alt="" src="../../static/electro_shop/images/bestsellers/LG 4K Ultra UHD TV.png"/>
+            <img class="item-img" alt="" src="../static/electro_shop/images/bestsellers/LG%204K%20Ultra%20UHD%20TV.png"/>
             <div class="frame">
               <div class="inner-frame">
                 <b class="text">LG 4K Ultra UHD TV</b>
                 <div class="rating-group">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
                 </div>
               </div>
               <div class="right-price">$5500.00</div>
@@ -282,16 +282,16 @@
         <div class="group">
           <div class="group-items">
             <div class="item-container"></div>
-            <img class="item-img" alt="" src="../../static/electro_shop/images/bestsellers/Samsung Galaxy S22 Ultra.png"/>
+            <img class="item-img" alt="" src="../static/electro_shop/images/bestsellers/Samsung%20Galaxy%20S22%20Ultra.png"/>
               <div class="frame">
                 <div class="inner-frame">
                   <b class="text">Samsung Galaxy S22 Ultra</b>
                   <div class="rating-group">
-                    <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                    <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                    <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                    <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                    <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
                   </div>
                 </div>
                 <div class="right-price">$1350.00</div>
@@ -300,16 +300,16 @@
           </div>
           <div class="group-items">
             <div class="item-container"></div>
-            <img class="item-img" alt="" src="../../static/electro_shop/images/bestsellers/Apple iPhone 14 Plus.png"/>
+            <img class="item-img" alt="" src="../static/electro_shop/images/bestsellers/Apple%20iPhone%2014%20Plus.png"/>
             <div class="frame">
               <div class="inner-frame">
                 <b class="text">Apple iPhone 14 Plus</b>
                 <div class="rating-group">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
                 </div>
               </div>
               <div class="right-price">$850.00</div>
@@ -317,16 +317,16 @@
           </div>
           <div class="group-items">
             <div class="item-container"></div>
-            <img class="item-img" alt="" src="../../static/electro_shop/images/bestsellers/Bose QuietComfort 45.png"/>
+            <img class="item-img" alt="" src="../static/electro_shop/images/bestsellers/Bose%20QuietComfort%2045.png"/>
             <div class="frame">
               <div class="inner-frame">
                 <b class="text">Bose QuietComfort 45</b>
                 <div class="rating-group">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
                 </div>
               </div>
               <div class="right-price">$300.00</div>
@@ -348,7 +348,7 @@
         <div class="big-ad-content">{{ adBanner.description }}</div>
       </div>
       <a href="{{ adBanner.butt_link }}" class="shop-now-butt">Shop Now
-        <img src="../../static/electro_shop/images/shop-now.svg" alt="">
+        <img src="../static/electro_shop/images/shop-now.svg" alt="">
       </a>
     </div>
   </section>
@@ -368,7 +368,7 @@
     <div class="bestseller-main">
       <div class="left-bold">
         <div class="left-bold-container"></div>
-        <img class="ad-img" alt="" src="../../static/electro_shop/images/top selling/Apple iPad Pro.svg"/>
+        <img class="ad-img" alt="" src="../static/electro_shop/images/top%20selling/Apple%20iPad%20Pro.svg"/>
         <b class="apple-ipad-pro-container">
           <p class="apple-ipad-pro">Apple iPad Pro <br>Wi-Fi</p>
         </b>
@@ -378,16 +378,16 @@
         <div class="group">
           <div class="group-items">
             <div class="item-container"></div>
-            <img class="item-img" alt="" src="../../static/electro_shop/images/top selling/Panasonic Lumix DC-GH5 II.png"/>
+            <img class="item-img" alt="" src="../static/electro_shop/images/top%20selling/Panasonic%20Lumix%20DC-GH5%20II.png"/>
             <div class="frame">
               <div class="inner-frame">
                 <b class="text">Panasonic Lumix DC-GH5 II</b>
                 <div class="rating-group">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
                 </div>
               </div>
               <div class="right-price">$1500.00</div>
@@ -395,16 +395,16 @@
           </div>
           <div class="group-items">
             <div class="item-container"></div>
-            <img class="item-img" alt="" src="../../static/electro_shop/images/top selling/Asus ROG Delta S.png"/>
+            <img class="item-img" alt="" src="../static/electro_shop/images/top%20selling/Asus%20ROG%20Delta%20S.png"/>
             <div class="frame">
               <div class="inner-frame">
                 <b class="text">Asus ROG Delta S</b>
                 <div class="rating-group">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
                 </div>
               </div>
               <div class="right-price">$250.00</div>
@@ -412,16 +412,16 @@
           </div>
           <div class="group-items">
             <div class="item-container"></div>
-            <img class="item-img" alt="" src="../../static/electro_shop/images/top selling/Xiaomi Fimi X8 Mini.png"/>
+            <img class="item-img" alt="" src="../static/electro_shop/images/top%20selling/Xiaomi%20Fimi%20X8%20Mini.png"/>
             <div class="frame">
               <div class="inner-frame">
                 <b class="text">Xiaomi Fimi X8 Mini</b>
                 <div class="rating-group">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
                 </div>
               </div>
               <div class="right-price">$650.00</div>
@@ -432,16 +432,16 @@
         <div class="group">
           <div class="group-items">
             <div class="item-container"></div>
-            <img class="item-img" alt="" src="../../static/electro_shop/images/top selling/Apple iPhone 13.png"/>
+            <img class="item-img" alt="" src="../static/electro_shop/images/top%20selling/Apple%20iPhone%2013.png"/>
               <div class="frame">
                 <div class="inner-frame">
                   <b class="text">Apple iPhone 13</b>
                   <div class="rating-group">
-                    <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                    <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                    <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                    <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                    <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                    <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
                   </div>
                 </div>
                 <div class="right-price">$500.00</div>
@@ -450,16 +450,16 @@
           </div>
           <div class="group-items">
             <div class="item-container"></div>
-            <img class="item-img" alt="" src="../../static/electro_shop/images/top selling/Fossil Gen 6 Smart Watch.png"/>
+            <img class="item-img" alt="" src="../static/electro_shop/images/top%20selling/Fossil%20Gen%206%20Smart%20Watch.png"/>
             <div class="frame">
               <div class="inner-frame">
                 <b class="text">Fossil Gen 6 Smart Watch</b>
                 <div class="rating-group">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
                 </div>
               </div>
               <div class="right-price">$450.00</div>
@@ -467,16 +467,16 @@
           </div>
           <div class="group-items">
             <div class="item-container"></div>
-            <img class="item-img" alt="" src="../../static/electro_shop/images/top selling/Apple iPad Air Wi-Fi.png"/>
+            <img class="item-img" alt="" src="../static/electro_shop/images/top%20selling/Apple%20iPad%20Air%20Wi-Fi.png"/>
             <div class="frame">
               <div class="inner-frame">
                 <b class="text">Apple iPad Air Wi-Fi</b>
                 <div class="rating-group">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
+                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
                 </div>
               </div>
               <div class="right-price">$850.00</div>
@@ -491,28 +491,28 @@
 
   <section class="our-features">
     <div class="our-features-frame">
-      <img src="../../static/electro_shop/images/our features/free shipping.svg" alt="">
+      <img src="../static/electro_shop/images/our%20features/free%20shipping.svg" alt="">
       <div class="our-features-text-group">
         <b class="text-title">Free Shipping</b>
         <div class="text">Free shipping for order above $150</div>
       </div>
     </div>
     <div class="our-features-frame">
-      <img src="../../static/electro_shop/images/our features/money guarantee.svg" alt="">
+      <img src="../static/electro_shop/images/our%20features/money%20guarantee.svg" alt="">
       <div class="our-features-text-group">
         <b class="text-title">Money Guarantee</b>
         <div class="text">Within 30 days for an exchange</div>
       </div>
     </div>
     <div class="our-features-frame">
-      <img src="../../static/electro_shop/images/our features/online support.svg" alt="">
+      <img src="../static/electro_shop/images/our%20features/online%20support.svg" alt="">
       <div class="our-features-text-group">
         <b class="text-title">Online Support</b>
         <div class="text">24 hours a day, 7 days a week</div>
       </div>
     </div>
     <div class="our-features-frame">
-      <img src="../../static/electro_shop/images/our features/flexible payment.svg" alt="">
+      <img src="../static/electro_shop/images/our%20features/flexible%20payment.svg" alt="">
       <div class="our-features-text-group">
         <b class="text-title">Flexible Payment</b>
         <div class="text">Pay with multiple credit cards</div>
@@ -521,28 +521,32 @@
   </section>
 
   <div id="log-page" class="modal-container">   
-    <form class="log-form">
+    <form method="POST" action="" class="log-form">
+        {% csrf_token %}
+        <input type="hidden" name="type" value="login">
       <div class="login-page-header">
         <div>
           <h2 class="welcome-text">Welcome 👋</h2>
           <div class="login-here-text">Please login here</div>
         </div>
         <a href="#" class="modal-close">
-          <img src="../../static/electro_shop/images/remove.svg" alt="">
+          <img src="../static/electro_shop/images/remove.svg" alt="">
         </a>
       </div>
 
       <label for="email-label" name="email-label"class="login-inp-label">Email Address
-        <input id="email-label" class="login-inp"
-          placeholder="kristin.watson@example.com"
-          type="text"
-        />
+{#        <input id="email-label" class="login-inp"#}
+{#          placeholder="kristin.watson@example.com"#}
+{#          type="text"#}
+{#        />#}
+          {{ login_form.username }}
       </label>
       <label for="password-label" name="password-label" class="login-inp-label">Password
-        <input id="password-label" class="login-inp"
-          placeholder="1238#@*"
-          type="password"
-        />
+{#        <input id="password-label" class="login-inp"#}
+{#          placeholder="1238#@*"#}
+{#          type="password"#}
+{#        />#}
+          {{ login_form.password }}
       </label>
       <div class="checkbox-forget-container">
         <div class="checkbox-container">
@@ -563,44 +567,56 @@
         </div>
       </div>
       <button id="log-with-butt" class="log-butt-position log-butt-shape">
-        <img alt="" src="../../static/electro_shop/images/google.svg" />Login with Google</button>
+        <img alt="" src="../static/electro_shop/images/google.svg" />Login with Google</button>
       <button id="log-with-butt" class="log-butt-position log-butt-shape">
-        <img alt="" src="../../static/electro_shop/images/apple.svg" />Login with Apple</button>
+        <img alt="" src="../static/electro_shop/images/apple.svg" />Login with Apple</button>
     </form>
     <header class="modal-header">
       <!-- <a href="#" class="modal-close">&times;</a> -->
     </header>
 </div>
 
-  <div id="reg-page" class="modal-container2">   
-    <form class="log-form">
+  <div id="reg-page" class="modal-container2">
+    <form method="POST" action="" class="log-form">
+        {% csrf_token %}
+        <input type="hidden" name="type" value="signup">
       <div class="login-page-header">
         <div>
           <h2 class="welcome-text">Create New Account</h2>
           <div class="login-here-text">Please enter details</div>
         </div>
         <a href="#" class="modal-close">
-          <img src="../../static/electro_shop/images/remove.svg" alt="">
+          <img src="../static/electro_shop/images/remove.svg" alt="">
         </a>
       </div>
 
-      <label for="name-label" name="name-label"class="login-inp-label">Name
-        <input id="name-label" class="login-inp"
-          placeholder="kristin Watson"
-          type="text"
-        />
+      <label class="login-inp-label">Email Address
+{#        <input id="email-label" class="login-inp"#}
+{#          placeholder="kristin.watson@example.com"#}
+{#          type="text"#}
+{#        />#}
+          {{ signup_form.username }}
       </label>
-      <label for="email-label" name="email-label"class="login-inp-label">Email Address
-        <input id="email-label" class="login-inp"
-          placeholder="kristin.watson@example.com"
-          type="text"
-        />
+      <label class="login-inp-label">Password
+{#        <input id="password-label" class="login-inp"#}
+{#          placeholder="1238#@*"#}
+{#          type="password"#}
+{#        />#}
+          {{ signup_form.email }}
       </label>
-      <label for="password-label" name="password-label" class="login-inp-label">Password
-        <input id="password-label" class="login-inp"
-          placeholder="1238#@*"
-          type="password"
-        />
+              <label class="login-inp-label">Email Address
+{#        <input id="email-label" class="login-inp"#}
+{#          placeholder="kristin.watson@example.com"#}
+{#          type="text"#}
+{#        />#}
+          {{ signup_form.password1 }}
+      </label>
+      <label class="login-inp-label">Password
+{#        <input id="password-label" class="login-inp"#}
+{#          placeholder="1238#@*"#}
+{#          type="password"#}
+{#        />#}
+          {{ signup_form.password2 }}
       </label>
       <div class="checkbox-forget-container">
         <div class="checkbox-container">
@@ -608,7 +624,10 @@
           <label for="checkbox-label" class="checkbox-label">I agree to the Terms & Conditions</label>
         </div>
       </div>
-      <a href="" id="log-butt-log-page" class="log-butt-position log-butt-shape">Register</a>
+        <button>
+                  <a type="submit" class="log-butt-position log-butt-shape">Register</a>
+
+        </button>
       <div class="log-page-separator-line-container">
         <div class="log-page-separator-line-pos">
           <div class="log-page-separator-line"></div>
@@ -619,9 +638,9 @@
         </div>
       </div>
       <button id="log-with-butt" class="log-butt-position log-butt-shape">
-        <img alt="" src="../../static/electro_shop/images/google.svg" />Login with Google</button>
+        <img alt="" src="../static/electro_shop/images/google.svg" />Login with Google</button>
       <button id="log-with-butt" class="log-butt-position log-butt-shape">
-        <img alt="" src="../../static/electro_shop/images/apple.svg" />Login with Apple</button>
+        <img alt="" src="../static/electro_shop/images/apple.svg" />Login with Apple</button>
     </form>
     <header class="modal-header">
       <!-- <a href="#" class="modal-close">&times;</a> -->
@@ -638,7 +657,7 @@
         <div class="login-here-text">We have share a code of your registered email address kristin.watson@example.com</div>
       </div>
       <a href="#" class="modal-close">
-        <img src="../../static/electro_shop/images/remove.svg" alt="">
+        <img src="../static/electro_shop/images/remove.svg" alt="">
       </a>
     </div>
     <div class="pass-inps">
@@ -690,7 +709,7 @@
       <div class="outer-circle">
         <div class="middle-circle">
           <div class="inner-circle">
-            <img src="../../static/electro_shop/images/lock.svg" alt="">
+            <img src="../static/electro_shop/images/lock.svg" alt="">
           </div>
         </div>
       </div>
@@ -706,19 +725,19 @@
 
     <footer class="footer">
         <div class="blue-bg"></div>
-        <img class="logo-text" alt="" src="../../static/electro_shop/images/footer/footer-logo.svg" />
+        <img class="logo-text" alt="" src="../static/electro_shop/images/footer/footer-logo.svg" />
 
         <div class="call-group">
-          <img alt="" src="../../static/electro_shop/images/footer/calling.svg"/>
+          <img alt="" src="../static/electro_shop/images/footer/calling.svg"/>
           <div class="footer-item-text">(316) 555-0116</div>
         </div>
 
         <div class="mail-group">
-          <img alt="" src="../../static/electro_shop/images/footer/gmail.svg"/>
+          <img alt="" src="../static/electro_shop/images/footer/gmail.svg"/>
           <div class="footer-item-text">electro@example.com</div>
         </div>
         <div class="address-group">
-          <img alt="" src="../../static/electro_shop/images/footer/location.svg"/>
+          <img alt="" src="../static/electro_shop/images/footer/location.svg"/>
           <p class="address-text">4140 Parker Rd. Allentown,<br>New Mexico 31134</p>
         </div>
         <div class="information-section">
@@ -753,11 +772,11 @@
             <div class="mail-section-frame">
               <div class="mail-section-inner-frame">
                 <div class="mail-img-container">
-                 <img src="../../static/electro_shop/images/footer/gmail.svg" alt="">
+                 <img src="../static/electro_shop/images/footer/gmail.svg" alt="">
                 </div>
                 <div class="footer-item-text">Your Email</div>
               </div>
-              <img alt="" src="../../static/electro_shop/images/arrow-right.svg"/>
+              <img alt="" src="../static/electro_shop/images/arrow-right.svg"/>
             </div>
           </div>
         </div>
@@ -768,16 +787,16 @@
 
         <div class="footer-line"></div>
         <div class="payment-sponsor-group">
-          <img src="../../static/electro_shop/images/footer/sponsor1.svg" alt="">
-          <img src="../../static/electro_shop/images/footer/sponsor2.svg" alt="">
-          <img src="../../static/electro_shop/images/footer/sponsor3.svg" alt="">
-          <img src="../../static/electro_shop/images/footer/sponsor4.svg" alt="">
-          <img src="../../static/electro_shop/images/footer/sponsor5.svg" alt="">
+          <img src="../static/electro_shop/images/footer/sponsor1.svg" alt="">
+          <img src="../static/electro_shop/images/footer/sponsor2.svg" alt="">
+          <img src="../static/electro_shop/images/footer/sponsor3.svg" alt="">
+          <img src="../static/electro_shop/images/footer/sponsor4.svg" alt="">
+          <img src="../static/electro_shop/images/footer/sponsor5.svg" alt="">
         </div>
         <div class="socialmedia-group">
-          <img src="../../static/electro_shop/images/footer/facebook.svg" alt="">
-          <img src="../../static/electro_shop/images/footer/instagram.svg" alt="">
-          <img src="../../static/electro_shop/images/footer/twitter.svg" alt="">
+          <img src="../static/electro_shop/images/footer/facebook.svg" alt="">
+          <img src="../static/electro_shop/images/footer/instagram.svg" alt="">
+          <img src="../static/electro_shop/images/footer/twitter.svg" alt="">
         </div>
       </footer>
 {% endblock %}

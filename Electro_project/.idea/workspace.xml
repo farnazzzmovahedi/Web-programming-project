@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="305a8b0e-6afe-4689-bd60-86e98682f953" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Electro_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Electro_project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Electro_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Electro_project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Electro_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Electro_project/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/electro_shop/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/electro_shop/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/electro_shop/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/electro_shop/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/electro_shop/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/electro_shop/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/electro_shop/templates/electro_shop/home-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/electro_shop/templates/home-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/electro_shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/electro_shop/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/electro_shop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/electro_shop/views.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2hKgYC72ZXyFymYNL07jdcbQPlN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Django Server.Electro_project.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/github-projects/Web-programming-project/Electro_project&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github-projects\Electro_project\electro_shop\static\electro_shop" />
+      <recent name="D:\github-projects\Electro_project\electro_shop\templates\electro_shop" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\github-projects\Web-programming-project\Electro_project\electro_shop\templates" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Electro_project" type="Python.DjangoServer" factoryName="Django server">
+      <module name="Electro_project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="Electro_project.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="localhost" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.17011.127" />
+        <option value="bundled-python-sdk-48aec45f0201-7e9c3bbb6e34-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.17011.127" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="305a8b0e-6afe-4689-bd60-86e98682f953" name="Changes" comment="" />
+      <created>1717348228721</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717348228721</updated>
+      <workItem from="1717348230173" duration="1617000" />
+      <workItem from="1717430786888" duration="10158000" />
+      <workItem from="1717681701326" duration="3193000" />
+      <workItem from="1717832612386" duration="1625000" />
+      <workItem from="1718123374311" duration="7719000" />
+      <workItem from="1718205748428" duration="1682000" />
+      <workItem from="1718208021876" duration="7588000" />
+      <workItem from="1718371382260" duration="1258000" />
+      <workItem from="1718374046377" duration="6057000" />
+      <workItem from="1718439624823" duration="3665000" />
+      <workItem from="1718452777579" duration="4647000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

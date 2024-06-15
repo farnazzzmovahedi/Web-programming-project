@@ -1,15 +1,19 @@
+from datetime import timezone
+from django.contrib.auth.base_user import AbstractBaseUser, BaseUserManager
+from django.contrib.auth.models import PermissionsMixin
 from django.db import models
-from django.utils import timezone
+from django.contrib.auth import get_user_model
+User = get_user_model()
 
 
 # Create your models here.
-class User(models.Model):
-    username = models.CharField(max_length=100)
-    email = models.EmailField(unique=True)
-    password = models.CharField(max_length=128)
-
-    def __str__(self):
-        return f"{self.username}"
+# class User(models.Model):
+#     username = models.CharField(max_length=100)
+#     email = models.EmailField(unique=True)
+#     password = models.CharField(max_length=128)
+#
+#     def __str__(self):
+#         return f"{self.username}"
 
 
 class Category(models.Model):
@@ -71,7 +75,7 @@ class ProductMedia(models.Model):
 class Banner(models.Model):
     BANNER_TYPES = (
         ('mainBanner', 'Main_Banner'),
-        ('adBanner', 'Ad_Banner'),
+        ('py manage.py runserver', 'Ad_Banner'),
     )
     banner_type = models.CharField(max_length=255, choices=BANNER_TYPES)
     title = models.CharField(max_length=255)
