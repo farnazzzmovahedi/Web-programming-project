@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="305a8b0e-6afe-4689-bd60-86e98682f953" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Electro_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Electro_project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Electro_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Electro_project/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Electro_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Electro_project/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/electro_shop/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/electro_shop/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/electro_shop/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/electro_shop/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/electro_shop/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/electro_shop/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/electro_shop/templates/electro_shop/home-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/electro_shop/templates/home-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/electro_shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/electro_shop/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/electro_shop/templates/home-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/electro_shop/templates/home-page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/electro_shop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/electro_shop/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +116,8 @@
       <workItem from="1718371382260" duration="1258000" />
       <workItem from="1718374046377" duration="6057000" />
       <workItem from="1718439624823" duration="3665000" />
-      <workItem from="1718452777579" duration="4647000" />
+      <workItem from="1718452777579" duration="6394000" />
+      <workItem from="1718465797963" duration="12764000" />
     </task>
     <servers />
   </component>

@@ -67,6 +67,7 @@
           <div class="right-icons-container">
               <img src="../static/electro_shop/images/search.svg" alt="">
               <img src="../static/electro_shop/images/favorites.svg" alt="">
+              {% if user_logged_in != None %}
               <div class="card-icon-frame">
               <img src="../static/electro_shop/images/card.svg" alt="">
               <div class="card-num-frame">
@@ -74,6 +75,7 @@
                   <b class="card-num-text">2</b>
               </div>
               </div>
+              {% endif %}
           </div>
           </div>
           <a href="#log-page">
@@ -90,12 +92,10 @@
     <section class="intro-section">
       <div class="content">
         <b class="content-topic-container">
-          <p class="content-topic">Great Sound<br>With Solo <br>Headphone</p>
+          <p class="content-topic">{{ mainBanner.title }}</p>
         </b>
         <p class="main-content">
-          It is a long established fact that a reader will be distracted by
-          the readable content of a page when looking at its layout. The
-          point of using Lorem Ipsum.
+        {{ mainBanner.description }}
         </p>
       </div>
         <a {% if user_logged_in != None %} href="{{ mainBanner.butt_link }}" {% endif %} class="shop-now-butt">Shop Now
@@ -367,21 +367,27 @@
     </div>
     <div class="bestseller-main">
       <div class="left-bold">
+          {% for product in products %}
+          {% if forloop.counter == 7 %}
         <div class="left-bold-container"></div>
         <img class="ad-img" alt="" src="../static/electro_shop/images/top%20selling/Apple%20iPad%20Pro.svg"/>
         <b class="apple-ipad-pro-container">
-          <p class="apple-ipad-pro">Apple iPad Pro <br>Wi-Fi</p>
+          <p class="apple-ipad-pro">{{ product.name }}</p>
         </b>
-        <div class="price">$1520</div>
+        <div class="price">{{product.price}}</div>
+          {% endif %}
+          {% endfor %}
       </div>
       <div class="bestseller-right">
         <div class="group">
+            {% for product in products %}
+            {% if forloop.counter >= 1 and forloop.counter <= 3 %}
           <div class="group-items">
             <div class="item-container"></div>
-            <img class="item-img" alt="" src="../static/electro_shop/images/top%20selling/Panasonic%20Lumix%20DC-GH5%20II.png"/>
+            <img class="item-img" alt="" src="{{ product.media.first.file.url }}"/>
             <div class="frame">
               <div class="inner-frame">
-                <b class="text">Panasonic Lumix DC-GH5 II</b>
+                <b class="text">{{product.name}}</b>
                 <div class="rating-group">
                   <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
                   <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
@@ -390,52 +396,21 @@
                   <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
                 </div>
               </div>
-              <div class="right-price">$1500.00</div>
+              <div class="right-price">{{ product.price }}</div>
             </div>
           </div>
-          <div class="group-items">
-            <div class="item-container"></div>
-            <img class="item-img" alt="" src="../static/electro_shop/images/top%20selling/Asus%20ROG%20Delta%20S.png"/>
-            <div class="frame">
-              <div class="inner-frame">
-                <b class="text">Asus ROG Delta S</b>
-                <div class="rating-group">
-                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
-                </div>
-              </div>
-              <div class="right-price">$250.00</div>
-            </div>
+            {% endif %}
+            {% endfor %}
           </div>
-          <div class="group-items">
-            <div class="item-container"></div>
-            <img class="item-img" alt="" src="../static/electro_shop/images/top%20selling/Xiaomi%20Fimi%20X8%20Mini.png"/>
-            <div class="frame">
-              <div class="inner-frame">
-                <b class="text">Xiaomi Fimi X8 Mini</b>
-                <div class="rating-group">
-                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
-                </div>
-              </div>
-              <div class="right-price">$650.00</div>
-            </div>
-          </div>
-        </div>
-
         <div class="group">
+            {% for product in products %}
+            {% if forloop.counter >= 4 and forloop.counter <= 6 %}
           <div class="group-items">
             <div class="item-container"></div>
-            <img class="item-img" alt="" src="../static/electro_shop/images/top%20selling/Apple%20iPhone%2013.png"/>
+            <img class="item-img" alt="" src="{{ product.media.first.file.url }}"/>
               <div class="frame">
                 <div class="inner-frame">
-                  <b class="text">Apple iPhone 13</b>
+                  <b class="text">{{ product.name }}</b>
                   <div class="rating-group">
                     <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
                     <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
@@ -444,43 +419,11 @@
                     <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
                   </div>
                 </div>
-                <div class="right-price">$500.00</div>
+                <div class="right-price">{{ product.price }}</div>
               </div>
             </div>
-          </div>
-          <div class="group-items">
-            <div class="item-container"></div>
-            <img class="item-img" alt="" src="../static/electro_shop/images/top%20selling/Fossil%20Gen%206%20Smart%20Watch.png"/>
-            <div class="frame">
-              <div class="inner-frame">
-                <b class="text">Fossil Gen 6 Smart Watch</b>
-                <div class="rating-group">
-                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
-                </div>
-              </div>
-              <div class="right-price">$450.00</div>
-            </div>
-          </div>
-          <div class="group-items">
-            <div class="item-container"></div>
-            <img class="item-img" alt="" src="../static/electro_shop/images/top%20selling/Apple%20iPad%20Air%20Wi-Fi.png"/>
-            <div class="frame">
-              <div class="inner-frame">
-                <b class="text">Apple iPad Air Wi-Fi</b>
-                <div class="rating-group">
-                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
-                  <img src="../static/electro_shop/images/bestsellers/star.svg" alt="">
-                </div>
-              </div>
-              <div class="right-price">$850.00</div>
-            </div>
+             {% endif %}
+            {% endfor %}
           </div>
         </div>
       </div>
